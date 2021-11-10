@@ -169,7 +169,7 @@ Soit un champ vectoriel $\overrightarrow{B}(M)$ définit en tout point M de l'es
 
 ````
 
-````{important} __Fondamental : Conservation du flux du champ magnétique_
+````{important} __Fondamental : Conservation du flux du champ magnétique__
 
 Le flux du champ magnétique est conservé, c'est-à-dire qu'il est toujours nul à travers une surface fermée.
 
@@ -266,7 +266,7 @@ On considère les deux exemples précédente :
 \end{equation}
 > Il vient que l'intensité totale s'écrit :
 > \begin{equation}
-\\int_{\Sigma} \overrightarrow{j_v}(M) \cdot \overrightarrow{dS}(M)
+\iint_{\Sigma} \overrightarrow{j_v}(M) \cdot \overrightarrow{dS}(M)
 \end{equation}
 >
 > Dans le cas uniforme, il vient $I = j_0 \pi R^2$
@@ -276,7 +276,7 @@ On considère les deux exemples précédente :
 >La ligne et donc lsurface $v(M) dtdz$ étant infinitésimaux, on peut considérer que la densité surfacique de charges mobiles y est uniforme et la quantité de charges est donc $\sigma(M)v(M) dt dz$, ce qu'on peut réécrire vectoriellement :
 > Il vient que l'intensité totale s'écrit :
 > \begin{equation}
-\\int_{\Sigma} \overrightarrow{j_s}(M) dz
+\int j_s(M) dz
 \end{equation}
 > où $j_s(M)$ est la valeur de la composante de $\overrightarrow{j_s}$ suivant $\overrightarrow{e_y}$.
 >
@@ -285,7 +285,8 @@ On considère les deux exemples précédente :
 ### Notions de symétries et d'invariance
 
 #### Invariance
-```{important} Invariance
+```{important} __Invariance__
+
 Soit une transformation de l'espace $\mathcal{T}$. On dit qu'elle laisse invariante un champ scalaire $C(M)$ si et seulement si pour tout point M' image des points M de l'espace, $C(M) =C(M')$.
 ```
 
@@ -304,12 +305,14 @@ On distingue alors les invariances par translation et par rotation.
 ````
 
 #### Symétrie et anti-symétrie planaire d'un vecteur
-````{important} Symétrie planaires
+````{important} __Symétrie planaires__
+
 Soit un plan $\Pi$. On dit que le champ vectoriel $\overrightarrow{j}(M))$ présente une symétrie par rapport à $\Pi$ si et seulement si pour tout point M' image de M par rapport à $\Pi$, $\overrightarrow{j}(M')$ est symétrique de $\overrightarrow{j}(M)$ par rapport à $\Pi$
 
 ````
 
-````{important} Antisymétrie planaires
+````{important} __Antisymétrie planaires__
+
 Soit un plan $\Pi$. On dit que le champ vectoriel $\overrightarrow{j}(M))$ présente une anti-symétrie par rapport à $\Pi$ si et seulement si pour tout point M' image de M par rapport à $\Pi$, $\overrightarrow{j}(M')$ est __l'opposé__ du symétrique de $\overrightarrow{j}(M)$ par rapport à $\Pi$
 
 ````
@@ -323,7 +326,7 @@ Soit un plan $\Pi$. On dit que le champ vectoriel $\overrightarrow{j}(M))$ prés
 ````
 
 ````{tip} Exercice : Conséquence sur les coordonnées
-On considérons un champ magnétique $\overrightarrow{B}(M)$ qui possède comme plan de symétrie le plan $xOy$ d'un repère cartésien $(0, \overrightarrow{e_x}, \overrightarrow{e_y}, \overrightarrow{e_z}).
+On considérons un champ magnétique $\overrightarrow{B}(M)$ qui possède comme plan de symétrie le plan $xOy$ d'un repère cartésien $(0, \overrightarrow{e_x}, \overrightarrow{e_y}, \overrightarrow{e_z})$.
 
 On note les composantes de $\overrightarrow{B}(M(x, y, z))$ :
 * $B_x(x, y, z)$
@@ -346,18 +349,20 @@ On considérons un vecteur champ magnétique $\overrightarrow{B}(M)$ qui possèd
 
 ````
 
-````{important} Orientation du champ
+````{important} __Orientation du champ__
+
 Cette observation est __fondamental__ car cela signifie qu'en connaissance les symétries du champ magnétique, on peut l'orienter en de nombreux points. On obtiendra ainsi une expression simplifier du champ magnétique.
 ````
 
 ### Principe de Curie
-````{important} Fondamental : Principe de Curie
+````{important} __Fondamental : Principe de Curie__
+
 Lorsque certaines causes produisent certains effets, les éléments de symétrie des causes doivent se retrouver dans les effets produits.
 ````
 
 Dans le cas du champ magnétique, la cause est la distribution de courants et la conséquence est le champ magnétique. Les symétries (et invariances) de la distribution de courant se retrouvera donc pour le champ magnétique.
 
-````{important} Conséquence sur le champ magnétique
+````{important} __Conséquence sur le champ magnétique__
 
 Mais le champ magnétique est particulier (on dit que c'est un __pseudo-vecteur__ car à l'image du moment cinétique, il s'obtient mathématiquement par un produit vectoriel). Concrètement, cela signifie que __pour le champ magnétique__ :
 * les invariances de la distribution de courants sont aussi des invariances du champ magnétique
@@ -368,19 +373,19 @@ Mais le champ magnétique est particulier (on dit que c'est un __pseudo-vecteur_
 ````{admonition} Exemple : Détermination de la structure du champ B
 :class: tip
 On va utiliser le principe de Curie pour préciser la structure du champ magnétique pour un fil infini.
+````
 
-* Pour un point M de l'espace, le plan perpendiculaire au fil __et passant par M__ est un plan d'anti-symétrie des courants (défini par les vecteurs ($\overrightarrow{e_r}), \overrightarrow{e_{\theta}}$, c'est donc un plan de symétrie du vecteur $\overrightarrow{B}$. __Il vient qu'au point M qui est sur ce plan, le champ magnétique est contenu dans ce plan : $B_z(M) = 0$.
-* Pour un point M de l'espace, le plan contenant le fil __et passant par M__ est un plan de symétrie des courants (défini par les vecteurs ($\overrightarrow{e_r}), \overrightarrow{e_z}$, c'est donc un plan d'anti-symétrie du vecteur $\overrightarrow{B}$. __Il vient qu'au point M qui est sur ce plan, le champ magnétique est perpendiculaire dans ce plan donc suivant $\overrightarrow{e_\theta}$ : $B_r(M) = B_z(M) = 0$
-* __Invariance__ : La distribution du courant est invariante par translation suivant l'axe donc si les courant ne dépendent pas de $z$, les composantes de $\overrightarrow{B}$ non plus.
-* __Invariance__ : La distribution du courant est invariante par rotation autour de l'axe donc si les courant ne dépendent pas de $\theta$, les composantes de $\overrightarrow{B}$ non plus.
-
-
-__Synthèse__ : Il vient qu'on peut écrire une expression simplifiée du champ magnétique en tout point M de l'espace :
-
-\begin{equation}
+>* Pour un point M de l'espace, le plan perpendiculaire au fil __et passant par M__ est un plan d'anti-symétrie des courants (défini par les vecteurs ($\overrightarrow{e_r}), \overrightarrow{e_{\theta}}$, c'est donc un plan de symétrie du vecteur $\overrightarrow{B}$. __Il vient qu'au point M qui est sur ce plan, le champ magnétique est contenu dans ce plan : $B_z(M) = 0$.__
+>* Pour un point M de l'espace, le plan contenant le fil __et passant par M__ est un plan de symétrie des courants (défini par les vecteurs ($\overrightarrow{e_r}), \overrightarrow{e_z}$, c'est donc un plan d'anti-symétrie du vecteur $\overrightarrow{B}$. __Il vient qu'au point M qui est sur ce plan, le champ magnétique est perpendiculaire dans ce plan donc suivant $\overrightarrow{e_\theta}$ : $B_r(M) = B_z(M) = 0$__
+>* __Invariance__ : La distribution du courant est invariante par translation suivant l'axe donc si les courant ne dépendent pas de $z$, les composantes de $\overrightarrow{B}$ non plus.
+>* __Invariance__ : La distribution du courant est invariante par rotation autour de l'axe donc si les courant ne dépendent pas de $\theta$, les composantes de $\overrightarrow{B}$ non plus.
+>
+>
+>__Synthèse__ : Il vient qu'on peut écrire une expression simplifiée du champ magnétique en tout point M de l'espace :
+>
+>\begin{equation}
 	\overrightarrow{B}(M) = B_{\theta}(r) e_{\theta}
 \end{equation}
-````
 
 Cette expression simplifiée permet de réaliser des calculs simples pour expliciter $B_{\theta}$ grâce au théorème d'Ampère (cf deuxième année).
 
@@ -398,7 +403,7 @@ Il faut aussi connaître l'ordre du champ magnétique terrestre créé par les m
 ````
 
 ### Champ créé par un circuit électrique
-````{important} Fondamental : Théorème d'Ampère (pas à connaître en première année)
+````{admonition} Théorème d'Ampère (pas à connaître en première année)
 :class: dropdown
 
 La circulation du champ magnétique sur un contour orienté (C) fermé est le produit de $\mu_0$ par la somme algébrique des intensités des courants enlacés par ce contour, les intensités dont l'orientation n'est pas en cohérence avec celle du contour (règle du tire- bouchon) étant changées de signe:
@@ -414,7 +419,7 @@ On pourrait avoir bien entendu plusieurs types de charges. La circulation est un
 
 ````
 
-````{tip} Exercice : Cas simple. Ordre de grandeur
+````{tip} __Exercice : Cas simple. Ordre de grandeur__
 
 Estimer à partir du théorème d'Ampère le nombre de spire d'un bobinage nécessaire pour obtenir un champ 100 fois supérieure au champ terrestre à une distance proche du bobinage. Commenter.
 
@@ -429,13 +434,13 @@ De prime abord, on associe la création d'un champ magnétique à un déplacemen
 
 
 ### Approximation dipolaire. Carte de champ magnétique
-````{important} Définition : Approximation dipolaire
+````{important} __Définition : Approximation dipolaire__
 
 Soit un champ magnétique créé par un dispositif particulier (aimant, circuit, phénomène microscopique...) situé autour d'un point O. On se place dans le cadre de l'approximation dipolaire si l'on considère que le point M où l'on calcule/étudie le champ magnétique est "loin" du dispositif, c'est-à-dire que la distance OM est grande devant la taille caractéristique L du dispositif.
 
 ````
 
-````{admonition} Exemple : Exemples
+````{admonition} Exemples
 :class: tip, dropdown
 
 
@@ -446,7 +451,7 @@ Soit un champ magnétique créé par un dispositif particulier (aimant, circuit,
 
 ````
 
-````{important} Fondamental : Champ magnétique dans le cadre de l'approximation dipolaire
+````{important} __Fondamental : Champ magnétique dans le cadre de l'approximation dipolaire__
 
 Dans le cadre de l'approximation dipolaire, les dispositifs magnétiques, possèdent malgré leur grande variété de réalisation des cartes de champs de forme relativement similaire. On pourra distinguer plusieurs "classes de dispositifs" :
 
@@ -496,15 +501,15 @@ Les dipôles magnétiques regroupent un ensemble de dispositifs très variés (m
 :class: tip, dropdown
 
 On considère une spire circulaire de rayon $R$ parcourue par un courant $I$. A une distance $r >> R$ du centre de la spire, on peut considérer qu'on se place dans le cadre de l'approximation dipolaire. Le moment magnétique de la spire est:
-\[
+$$
 \overrightarrow{M} = \pi R^2 I \overrightarrow{n}
-\]
+$$
 
 où $\overrightarrow{n}$ est le vecteur normal à la spire orienté en cohérence avec le sens de l'intensité $I$ orientée dans le circuit. On peut réécrire cette expression sous la forme:
 
-\[
+$$
 \overrightarrow{M} = I \overrightarrow{S}
-\]
+$$
 
 où $\overrightarrow{S}$ est le vecteur surface associé à la spire (\ref{enc:enc_vecteur_surface_et_moment_dipolaire_d_un_circuit}).
 
@@ -529,7 +534,7 @@ Si dans le cas général, le calcul de $\overrightarrow{S}$ peut être relativem
 où S est la surface délimité par le contour et $\overrightarrow{n}$ le vecteur normal à la surface dans le sens en cohérence avec l'orientation du contour s'il y en a.
 ````
 
-````{important} Fondamental : Spire plane de forme quelconque (Admise)
+````{important} __Fondamental : Spire plane de forme quelconque (Admise)__
 
 Soit une spire plane parcourue par une intensité $I$. On note $\overrightarrow{S}$ le vecteur surface orienté en cohérence avec l'intensité $I$. Le moment dipolaire magnétique de la spire dans le cadre de l'approximation dipolaire est:
 
@@ -556,19 +561,19 @@ Le magnétisme possède deux origines:
 #### Echelle microscopique. Moment cinétique et moment magnétique
 A l'échelle microscopique, les électrons sont en mouvement autour du noyau. Le mouvement créé donc un champ magnétique propre. Le mouvement des électrons est un mouvement orbital autour du noyau, on peut donc lui associer un moment cinétique orbital par rapport au noyau.
 
-````{important} Fondamental : Moment cinétique orbital et moment magnétique
+````{important} __Fondamental : Moment cinétique orbital et moment magnétique__
 
 Un mouvement orbital d'une particule chargée engendre un moment magnétique $\overrightarrow{m_L}$ proportionnel à son moment cinétique orbital $\overrightarrow{L}$. Le coefficient de proportionnalité est appelé rapport gyromagnétique.
 
 ````
 
-````{tip} Exercice : Rapport gyromagnétique de l'électron dans un atome
+````{tip} __Exercice : Rapport gyromagnétique de l'électron dans un atome__
 
 Déterminer le rapport gyromagnétique de l'électron dans un atome en orbite circulaire de rayon $R$ à la vitesse $v$.
 
 ````
 
-````{tip} Exercice : Modèle de Bohr de l'atome.
+````{tip} __Exercice : Modèle de Bohr de l'atome.__
 
 On considère un atome dans le modèle de Bohr: les électrons réalisent des orbites circulaires dont le moment cinétique total est quantifié: $\left \| \overrightarrow{L}\right \| = n \hbar$. Montrer que le moment magnétique de l'atome est quantifié est peut se mettre sous la forme $\left \| \overrightarrow{M}\right \| = n \mu_B$. $\mu_B$ est appelé magneton de Bohr.
 
@@ -624,9 +629,9 @@ Les effets magnétiques à l'échelle macroscopique sont dues:
 
 A l'échelle microscopique ou en considérant un ensemble discret de dipôle magnétique $\overrightarrow{m_i}$ regroupées. Le moment magnétique total s'écrit :
 
-\[
+$$
 \overrightarrow{m_{Total}} = \sum\limits_{i} \overrightarrow{m_i}
-\]
+$$
 
 ````
 
@@ -643,9 +648,9 @@ A l'échelle mésoscopique, on peut considérer que la matière --- y compris --
 
 Approche statistique: On peut définir le moment magnétique moyen $\left\langle \overrightarrow {m} \right\rangle$ dans un volume $d \tau$ et le nombre $n$ d'atomes ou molécules par unité de volume possédant un moment magnétique. On aura:
 
-\[
+$$
 \overrightarrow{dm_{Total}} = \overrightarrow{M} d \tau = n \left\langle \overrightarrow {m} \right\rangle d \tau
-\]
+$$
 
 ````
 
@@ -692,7 +697,7 @@ Un modèle dipolaire pour le champ magnétique terrestre en surface est un modè
 
 ## Travaux dirigés
 
-````{tip} Exercice : Symétrie
+````{tip} __Exercice : Symétrie__
 
 Reprendre les distributions de courant données dans [le cours sur les symétries](exemple_dist) et déterminer:
 * les symétries des courants
@@ -702,7 +707,8 @@ Reprendre les distributions de courant données dans [le cours sur les symétrie
 On choisira le type de repère de manière réfléchi quand il n'est pas donné.
 ````
 
-````{tip} Exercice : Lecture d'une carte de champ
+````{tip} __Exercice : Lecture d'une carte de champ__
+
 Trois fils infinis longs et parallèles entre eux sont parcourus par des courants $I_1,I_2$ et $I_3$. Les lignes de champ sont représentées sur la carte ci-dessous. On rappelle que le champ magnétique créé par un fil infini s'écrit:
 
 \begin{equation}
@@ -724,7 +730,8 @@ Carte de champ dans un plan perpendiculaire à l'axe des fils.
 1. On sait que le champ en M vaut 0,01 T. Estimer la valeur du champ en P.
 ````
 
-````{tip} Exercice : Moments magnétiques intrinséque et moment d'inertie.
+````{tip} _Exercice : Moments magnétiques intrinséque et moment d'inertie.__
+
 On considère un électron qu'on représente sous la forme d'un corpuscule sphérique de charge totale e et de rayon R en rotation autour de son diamètre; son moment cinétique est $\sigma = s \hbar = s \frac{h}{2 \pi}$ où $h = 6.63 \times 10^{-34} \rm{J.s}$ est la constante de Planck.
 
 Le moment d'inertie d'un boule de masse  uniformément répartie sur son axe est $J = \frac{2}{5} m_E R^2$.
@@ -733,11 +740,12 @@ Le moment d'inertie d'un boule de masse  uniformément répartie sur son axe est
 1. Calculer l'énergie cinétique et la vitesse à la périphérie. Commenter. On donne $s = 1/2; R = 2.8 \times 10^{-15} \rm{m}; m_e = 9.1\times 10^{-31} \rm{kg}$.
 ````
 
-````{tip} Exercice : Générer un champ tournant. Double bobinage
+````{tip} __Exercice : Générer un champ tournant. Double bobinage__
 
 1. On considère deux bobines longues qui pourront être assimilées à des bobines infinies quant au  champ magnétique qu'elles créent. Ces deux bobines sont disjointes et leurs axes forment un angle de $90 ^{\circ}$ (on ne s'intéressera pas ici à la manière de réaliser en pratique une telle configuration). Les deux bobines sont parcourus par des courants sinusoïdaux de même amplitude $I_0$, de même pulsation $\omega$ mais déphasé de $\pi/2$. Montrer que le champ magnétique résultant est un champ tournant dont on déterminera les caractéristiques.
 ````
 
-````{tip} Exercice : (Recherche) Matériau ferromagnétique
+````{tip} __Exercice : (Recherche) Matériau ferromagnétique__
+
 1. A partir du magnéton de Bohr, proposer un modèle et une estimation permettant de déterminer le champ maximal d'un aimant droit composé de Fer à proche distance. Comparer aux valeurs trouvées.
 ````

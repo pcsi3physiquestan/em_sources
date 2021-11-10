@@ -111,9 +111,9 @@ La force dépend de la vitesse et semble donc dépendre du référentiel. Il n'e
 
 __Principe fondamental de la dynamique:__ Appliqué à la particule M de masse m et de charge q, il s'énonce évidemment: 
 
-\[
+$$
 m \frac{d \overrightarrow{v}}{dt} = q (\overrightarrow{E} + \overrightarrow{v} \wedge \overrightarrow{B})
-\]
+$$
 
 ### Analyse énergétique
 __On ne s'intéresse ici qu'à des champs statiques.__
@@ -129,7 +129,6 @@ Le champ électrique en régime statique est conservatif: $\overrightarrow{E} = 
 
 La force magnétique ne travaillant pas, on peut dire qu'il s'agit de l'énergie potentielle associée à la force de Lorentz. Attention, néanmoins le caractère conservatif du champ électrique n'est valable que pour des champs statiques.
 
-````
 
 ## Mouvement d'une particule chargée dans un champ électrostatique uniforme
 
@@ -234,7 +233,7 @@ Soit une particule de charge $q$ dans un champ magnétique uniforme $\overrighta
 -m R \dot \theta^2 \overrightarrow{e_r} + m R \ddot \theta \overrightarrow{e_{\theta}} &= q R \dot \theta \overrightarrow{e_{\theta}} \wedge B \overrightarrow{e_z}\\
 -m R \dot \theta^2 \overrightarrow{e_r} + m R \ddot \theta \overrightarrow{e_{\theta}} &= q R B \dot \theta \overrightarrow{e_r}
 \end{align*}
-
+>
 >En projection sur $\overrightarrow{e_{\theta}}$, on retrouve que le mouvement est uniforme ($\ddot \theta = 0$) et en projection sur $\overrightarrow{e_r}$, il vient:
 >
 >$$
