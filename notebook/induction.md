@@ -1,7 +1,23 @@
+---
+jupytext:
+  encoding: '# -*- coding: utf-8 -*-'
+  formats: ipynb,md:myst
+  split_at_heading: true
+  text_representation:
+    extension: .md
+    format_name: myst
+    format_version: 0.13
+    jupytext_version: 1.10.3
+kernelspec:
+  display_name: Python 3
+  language: python
+  name: python3
+---
 # Induction et application
 ## Introduction
 
-### Observation expérimentale
+### Observation expérimentale (en ligne)
+````{topic} Observations expérimentales
 Expérimentalement, on observe que:
 
 * Un aimant se déplaçant dans une bobine crée une tension aux bornes de la bobine
@@ -10,13 +26,15 @@ Expérimentalement, on observe que:
 
 Les différentes expériences réalisées montrent la création d'une force électromotrice induite à l'intérieur des différents circuits. Il apparaît que ce phénomène d'induction apparaît lorsque les caractéristiques du champ magnétique vu du circuit sont variables. Une étude quantitative montrerait que le phénomène d'induction est dû à la variation du flux du champ magnétique à travers le circuit.
 
-### Loi de Lenz
 Par des mesures plus précises, on observe que:
 
 * La tension créé dans la bobine au passage de l'aimant crée un courant qui crée un champ magnétique variable exerçant une force sur l'aimant. Cette force tend à ralentir l'aimant (ou la bobine).
 * Dans le cas d'une bobine parcourue par une intensité variable. On observe que la tension induite dans la seconde bobine est variable aussi créant un courant variable dans la bobine. Le champ magnétique ainsi créé est aussi variable et va induire aussi une tension dans la première bobine. Cette tension tend à s'opposer aux variations de l'intensité dans la première bobine.
 
-Dans tous les exemples données, l'effet créé par la variation du flux du champ magnétique va lui-même engendrer un effet sur le flux du champ magnétique: cet effet est opposé à la cause initiale: on parle de __loi de modération__.
+````
+
+### Loi de Lenz
+Dans tous les exemples données (en ligne), l'effet créé par la variation du flux du champ magnétique va lui-même engendrer un effet sur le flux du champ magnétique: cet effet est opposé à la cause initiale: on parle de __loi de modération__.
 
 ````{important} __Fondamental : Loi de Lenz__
 
@@ -25,13 +43,13 @@ Un phénomène d'induction suit un loi de modération, c'est-à-dire que l'effet
 ````
 
 ### Loi de Faraday
-````{important} __Définition : Loi de Faraday__
+````{important} __Fondamental : Loi de Faraday__
 
 Un circuit conducteur $\Gamma$ plongé dans un champ magnétique $\overrightarrow{B}$ est le siège d'une force électromotrice appelée force électromotrice induite: $e = - \frac{d \phi}{dt}$ où $\phi$ est le flux du champ magnétique à travers le circuit (dont la surface est orientée) et la f.e.m. induite est orientée dans le circuit en cohérence avec la surface orientée (règle du tire-bouchon).
 
 ````
 
-````{dropdown} Remarque
+````{topic} Remarque
 
 Il apparaît clairement dans cette loi la nécessité d'un flux variable. Cela peut se produire de deux façons (qui peuvent être simultanées):
 
@@ -54,16 +72,16 @@ La situation sur le schéma (à une maille) de la f.e.m. induite n'a pas d'impor
 ### Principe d'auto-induction
 __Position du problème:__ Commençons par remarquer qu'un circuit électrique parcouru par un courant électrique engendre un champ magnétique et donc a priori un flux magnétique non nul à travers le circuit lui-même (on parle de __flux propre__). Si l'intensité qui circule dans le circuit est variable, alors le champ magnétique l'est aussi, donc son flux sera variable. Il devrait donc se produire un phénomène d'induction à travers le circuit, c'est-à-dire qu'une f.e.m. induite devrait s'opposer à la variation du courant (cause initiale). Cela se produit: c'est le __phénomène d'auto-induction__.
 
-````{tip} __Exercice : Cas d'une bobine de grande longueur__  
+````{tip} __Méthode : Cas d'une bobine de grande longueur__  
 
 Soit une bobine de longueur D contenant N spires jointives circulaires de section S parcourues par un courant $i(t)$.
 
 1. Déterminer le flux propre de la bobine, c'est-à-dire le flux du champ magnétique créé par la bobine à travers la bobine elle-même. On assimilera le champ magnétique créé à celui créé par une bobine infinie.
 1. Déterminer l'expression de la f.e.m. auto-induite et commenter son expression. Préciser la modélisation électrique du composant et ses caractéristiques.
 1. Estimer l'ordre de grandeur de l'inductance ainsi définie pour différentes valeurs de bobines. Commenter.
-
-
 ````
+
+````{topic} Correction
 
 >__On notera l'importance d'un schéma et des conventions d'orientation.__
 
@@ -87,29 +105,30 @@ e = - \frac{d \Phi}{dt} = - \mu_0 \frac{N^2S}{D} \frac{dI}{dt}
 $$
 >On reconnaître l'équation d'évolution d'une inductance avec $L = \frac{\mu_0 N^2 S}{D}$
 >* Pour les bobines à air, on a $D \sim 10 \rm{cm}$ et $S \sim 1 \rm{dm^{2}}$ soit $L \sim \times 10^{-7} N^2$. Il faut donc 10 spires pour avoir $L = 1 \rm{mH}$ et près de 3000 spires (sur 10 centimètres) pour avoir $L = 1 \rm{H}$. On pourra remarquer que les ordre de grandeur choisis ici ne valide PAS l'hypothèse d'une bobine longue. Dans ces conditions, le champ magnétiques chute très rapidement et l'inductance diminue aussi. Il est donc très compliqué de créer une bobine à air de forte inductance.
-
-
-````{important} __Définition : Autoinductance__
-
-Le flux propre d'un composant est toujours proportionnel à l'intensité qui le traverse et la f.e.m. induite est de même proportionnel à la dérivée temporelle de l'intensité. Le facteur de proportionnalité, identique, est appelé inductance (ou plus précisément auto-inductance):
-\begin{equation}
-\Phi = L I
-\end{equation}
-La loi de Faraday donne la fem auto-induide: $e = - L \frac{d I}{dt}$ La valeur de l'inductance dépend de la géométrie du circuit.
 ````
 
-````{dropdown} Remarque
 
+````{margin}
 En pratique, on oriente cette effet en convention récepteur dans un circuit électrique, ce qui donne les équation d'évolution habituel d'une bobine. On pourra, comme en électrocinétique, conduire des bilans de puissance directement sur le circuit équivalent.
 
 ````
+````{important} __Définition : Auto-inductance__
+
+Le flux propre d'un composant est toujours proportionnel à l'intensité qui le traverse et la f.e.m. induite est de même proportionnel à la dérivée temporelle de l'intensité. Le facteur de proportionnalité, identique, est appelé inductance (ou plus précisément auto-inductance):
+
+$$
+\Phi = L I
+$$
+La loi de Faraday donne la fem auto-induide: $e = - L \frac{d I}{dt}$ La valeur de l'inductance dépend de la géométrie du circuit.
+````
+
 
 ### Induction mutuelle 
 __Position du problème:__ Considérons deux bobines longues de même axe. On suppose que l'une est imbriquée dans l'autre, de sorte que l'approximation du champ créé par une bobine infinie reste valable. On note $I_i, D_i, S_i$ et $N_i$ les intensités, longueur, section et nombre de spire de la bobine i.
 
 __Champ propre et champ extérieur:__ Les phénomènes d'induction pour chaque bobine résultent de la superposition du champ magnétique propre à la bobine considéré et du champ magnétique créé par l'autre bobine. Ce dernier phénomène est appelé phénomène d'induction mutuelle. Dans le cas de deux bobines, ces deux champs peuvent être a priori de même ordre de grandeur, on ne peut donc négliger un champ devant l'autre.
 
-````{tip} __Exercice : Flux mutuel entre deux bobines longues coaxiales__  
+````{tip} __Méthode : Flux mutuel entre deux bobines longues coaxiales__  
 
 On suppose le champ magnétique créé par chaque bobine assimilable __dans la bobine__ à celui d'une bobine longue à l'intérieur de la bobine (et est nul à l'extérieur). On pose $D_1 > D_2$ et $S_2 > S_1$. On suppose que les intensités "tournent" dans le même sens en progressant suivant les Oz positifs.
 
@@ -121,6 +140,7 @@ On suppose le champ magnétique créé par chaque bobine assimilable __dans la b
 
 ````
 
+````{topic} Correction
 >__On rappelle l'importance des conventions d'orientation.__
 >
 ```{figure} ./images/em_induc_mutelle_3d.jpg
@@ -142,20 +162,18 @@ e_2 = - \mu_0 \frac{N_1 N_2}{D_1} S_1 \frac{d I_1}{dt}
 \end{align*}
 >On obtient alors la modélisation \cref{fig_mutuelle_modele}.
 >* L'intensité $I_2$ tourne alors dans le sens contrainre à $\overrightarrow{e_z}$. Il vient que $e_1$ change de signe. On peut garder la même expression en changeant de sens la tension (\cref{fig_mutuelle_modele_inv}).
+````
 
-````{panels}
 ```{figure} ./images/em_mutuelle_modele.jpg
 :name: fig_mutuelle_modele
 :align: center
 Cas des intensités tournant dans le même sens
 ```
----
 ```{figure} ./images/em_mutuelle_modele_inv.jpg
 :name: fig_mutuelle_modele_inv
 :align: center
 Cas des intensités tournant dans des sens opposés
 ```
-````
 
 ````{important} __Définition : Inductance mutuelle__
 
@@ -177,7 +195,7 @@ I_2
 \end{bmatrix}
 \end{equation}
 
-```{dropdown} Remarque
+```{topic} Remarque
 
 Les coefficients dépendent la géométrie de chaque circuit et de leur disposition relative. Ils peuvent être négatifs à priori (on peut s'en convaincre en observant ce qui se passe si l'on inverse le sens de branche d'une des bobines dans l'exercice~\ref{exe:exe_flux_mutuel_entre_deux_bobines_longues_coaxiales}: le coefficient d'inductance mutuel est).
 
@@ -187,12 +205,6 @@ Les coefficients dépendent la géométrie de chaque circuit et de leur disposit
 ````{important} __Fondamental : Propriété des coefficient d'inductance mutuelle (Admis)__
 
 Ils sont égaux: $M_{2 \rightarrow 1} = M_{1 \rightarrow 2}$. On les notera $M$ par la suite.
-
-````
-
-````{tip} __Exercice : Deux bobines réelles en inductance mutuelle.__  
-
-On considère deux bobines d'auto-inductance L, de résistance R et de coefficient d'inductance mutuelle M. La première est court-circuitées et la seconde reliée à un générateur délivrant une tension $E(t) = E_0 \cos \omega t$. Déterminer les équations couplées pour les amplitudes complexes des intensités dans chaque circuit.
 
 ````
 
@@ -207,7 +219,7 @@ Deux circuits sont dits en influence totale si le flux total du champ magnétiqu
 Lorsque deux circuits sont en influence totale, $M = \sqrt{L_1 L_2}$. L'inductance mutuelle entre les deux circuits est alors maximale.
 ````
 
-````{dropdown} Remarque
+````{topic} Remarque
 
 Avoir une inductance mutuelle maximale est extrêmement intéressant car dans ces conditions, le premier circuit exerce une influence maximale par induction sur le second (et réciproquement). En général, on utilise l'inductance mutuelle pour transmettre une information ou de l'énergie. Dans les deux cas, l'influence totale permet de minimiser les pertes. Lorsqu'il n'y a pas influence totale, le transfert d'énergie n'est pas maximale, cela correspond à une fuite des lignes de champ magnétique.
 
@@ -218,26 +230,24 @@ Avoir une inductance mutuelle maximale est extrêmement intéressant car dans ce
 ````{important} __Fondamental : Energie emmagasinée__
 
 L'énergie totale emmagasinée par deux bobinages en influence mutuelle de coefficient M est:
-\begin{equation}
+
+$$
 E_{mag} = \frac{1}{2}L_1 I_1^2 + \frac{1}{2}L_2 I_2 ^2 + M I_1 I_2
-\end{equation}
-
-```{dropdown} Remarque
-
-Les deux premiers termes sont déjà connus. Le dernier montre que le couplage inductif permet aussi un transfert d'énergie (cette énergie vient en général d'un circuit pour être transférée à l'autre).
-
-```
+$$
 
 ````
 
+````{topic} Démonstration
 >__Démonstration :__ Considérons le système complet constitué des deux bobines. La puissance reçue par la bobine 1 s'écrit: $P_1 = i_1 (L_1 \frac{di_1}{dt} + M \frac{di_2}{dt})$. De même la puissance reçue par la bobine 2 s'écrit: $P_2 = i_2 (L_2 \frac{di_2}{dt} + M \frac{di_1}{dt})$. La puissance totale reçue s'écrit donc:
 >\begin{align*}
 P &= L_1 i_1 \frac{di_1}{dt} + L_2 i_2 \frac{di_2}{dt} + M (i_1 \frac{di_2}{dt} + i_2 \frac{di_1}{dt})\\
 & = \frac{d}{dt}(\frac{1}{2}L_2 i_2^2 + \frac{1}{2}L_1 i_1^2 + M i_1 i_2)
 \end{align*}
 >On peut écrire la puissance reçue sous la forme d'une dérivée temporelle d'une grandeur: l'énergie emmagasinée.
+````
 
-__Interprétation:__ L'énergie est donné à un instant t pour une configuration d'intensité $(I_1,I_2)$. Si dans le circuit 1, l'intensité venait à diminuer pour atteindre 0, sa variation engendrerait:
+````{topic} __Interprétation:__
+ L'énergie est donné à un instant t pour une configuration d'intensité $(I_1,I_2)$. Si dans le circuit 1, l'intensité venait à diminuer pour atteindre 0, sa variation engendrerait:
 
 * un phénomène d'auto-induction dans le circuit 1: la f.e.m. auto-induite fournirait de la puissance au circuit 1 selon les lois habituelle de l'électrocinétique.
 * un phénomène d'induction mutuelle dans le circuit 2: la f.e.m. induite fournirait au circuit 2 une puissance selon les lois habituelle de l'électrocinétique.
@@ -249,25 +259,16 @@ L'induction mutuelle peut permettre:
 * soit de transférer une information portée par la "forme" de l'intensité induite dans le second circuit.
 * soit de transférer de l'énergie d'un circuit à l'autre
 
-
-````{admonition} Exemple : Les puces RFID
-:class: hint, dropdown
+```{admonition} Exemples
   
-
-Les puces RFID fonctionnent sur le principe d'induction: le circuit fixe parcouru par un courant asservi va induire un courant dans le second circuit qui en retour va perturber le premier. La mesure de cette perturbation permet la communication entre la borne de contrôle et la puce.
-
+* Les puces RFID fonctionnent sur le principe d'induction: le circuit fixe parcouru par un courant asservi va induire un courant dans le second circuit qui en retour va perturber le premier. La mesure de cette perturbation permet la communication entre la borne de contrôle et la puce.
+* Outre les transformateurs étudié ci-dessous, on peut citer certains stimulateurs cardiaques dont les batteries sont rechargées en moyen d'une autre bobine en influence mutuelle. On évite ainsi le recours à une opération chirurgicale.
+```
 ````
 
-````{admonition} Exemple : Stimulateurs cardiaques
-:class: hint, dropdown
-  
 
-Outre les transformateurs étudié ci-dessous, on peut citer certains stimulateurs cardiaques dont les batteries sont rechargées en moyen d'une autre bobine en influence mutuelle. On évite ainsi le recours à une opération chirurgicale.
+````{topic} Complément : Coefficient d'induction mutuelle
 
-````
-
-````{admonition} Complément : Coefficient d'induction mutuelle
-:class: dropdown, hint
 Les résultats précédents montre que le coefficients d'induction mutuelle ne peut être supérieur aux inductances mise en jeu. Pour l'augmenter il faut:
 
 * se placer dans des conditions proches de l'influence totale. On utilise, si on peut des "circuits magnétiques", c'est-à-dire des matériaux possédant des propriétés magnétiques fortes. On ne détaillera pas pourquoi certains matériaux ont ces propriétés (matériaux ferreux surtout) mais il faut savoir que:
@@ -332,6 +333,12 @@ Le rapport de transformation d'un transformateur parfait est égal au rapport du
 
 ````
 
+````{margin}
+On travaille ici en valeur absolue. Le signe de $U_1$ et $U_2$ dépend du sens de l'enroulement. En général, on précise ce sens sur le schéma du transformateur.
+````
+````{important} Démonstration
+
+
 >Soit $\Phi_C$ le flux traversant une section du circuit magnétique enlacé par le primaire et le secondaire. Ce flux est le même pour toute section du circuit magnétique (on parle de flux commun) puisqu'on suppose qu'il n'y a pas de fuite de champ magnétique. Il traverse notamment chaque spire du primaire et chaque spire du secondaire. La loi de Faraday pour le primaire s'écrit donc:
 >$$
 \vert U_1 \vert = - \frac{d N_1 \Phi_C}{dt}
@@ -341,24 +348,24 @@ $$
 \vert U_2 \vert = - \frac{d N_2 \Phi_C}{dt}
 $$
 >Il vient le rapport demandé.
-
-````{dropdown} Remarque
-
-On travaille ici en valeur absolue. Le signe de $U_1$ et $U_2$ dépend du sens de l'enroulement. En général, on précise ce sens sur le schéma du transformateur.
-
-La consevation du flux revient à dire que les deux bobinages sont en influence totale.
-
 ````
+
 
 ````{tip} __Exercice : Bilan de puissance__
 Dans un transformateur parfait, la puissance reçue par le circuit primaire est égale à la puissance fournie par le circuit secondaire. En déduire que :
-\begin{equation}
+
+$$
 	\frac{I_2}{I_1} = - \frac{1}{m}
-\end{equation}
+$$
 On précisera le sens des intensités amenant à cette relation.
 ````
 
-````{admonition} Complément : Rapport de transformation des courants (HP)
+````{important} Démonstration
+
+__Sous l'hypothèse__ de perte d'un rendement énergétique égale à 1, la démonstration est directe.
+````
+
+````{topic} Complément : Rapport de transformation des courants (HP en première année)
 :class: dropdown, hint
 Puisque le champ magnétique circule le long du circuit magnétique. On peut calculer sa circulation le long d'une ligne de champ bouclée. Le théorème d'Ampère s'écrit:
 $$
@@ -372,15 +379,18 @@ Dans les représentation schématiques, le sens de l'enroulement est représent�
 ````
 
 
-#### Différents transformateurs
+#### Différents transformateurs (en ligne)
+
+````{topic} Typologie
 Il existe plusieurs manières de classer les transformateurs. Si l'on ne s'intéresse qu'à la loi des tensions, on distinguera trois cas:
 
 * __m>1__ : Le transformateur sert à augmenter la tension. Les centrales électriques s'en servent pour créer une haute tension portée par les lignes HT. Le transport haute tension est en effet très pratique car, comme on l'a vu, cela est couplée avec une diminution de l'intensité, donc des pertes par effet Joule.
 * __m<1__ : Le transformateur abaisse la tension. On se sert de ces transformateurs à l'autre bout du réseau électrique, pour ramener les hautes tensions du réseau au valeurs "standards" (220V efficace en France). Ces transformateurs sont aussi utilisé pour abaisser la tension du secteur, par exemple dans les adaptateurs censés fournir des tensions continues beaucoup plus basses. Cela était d'autant plus nécessaire que les circuits de redressement (diodes et condensateurs - moins vrai aujourd'hui) ne pouvaient fonctionner à des tensions aussi élevées que celle du secteur.
 * __m=1__ : on conserver la même valeur de tension. C'est transformateur ont une utilité particulière: il joue le rôle de transformateur d'isolement. En effet il n'y a pas de contact électrique (on dit "galvanique") entre le primaire et le secondaire. Ainsi, si le primaire est reliée à la Terre, le secondaire ne le sera pas: c'est le principe d'isolement.
+````
 
 
-````{dropdown} Remarque
+````{topic} Remarque
 
 Il existe aussi des transformateurs délivrant non pas une mais plusieurs tensions. Des fils de sortie sont reliés non seulement aux extrémités du bobinages mais aussi à des spires intérieures (cf. \cref{fig_transfo_symetrique}). Le nombre de spire varie alors suivant les branchements considérés et la tension de sortie aussi. On se sert notamment de tels transformateurs pour créer des alimentations symétriques. Un fil, sortie au milieu du transformateur aura un potentiel médian vis-à-vis des deux autres aux extrémités. C'est ce point de potentiel, une fois le redressement effectué qui est appelé "0V" sur les alimentations symétriques.
 
@@ -392,7 +402,7 @@ Il existe aussi des transformateurs délivrant non pas une mais plusieurs tensio
 
 ````
 
-#### Modélisation du transformateur réel
+````{topic} Modélisation du transformateur réel
 Dans la pratique, le rendement ne peut être égale à 1 à cause des pertes interne. Rappelons que les pertes peuvent être dues:
 
 * aux pertes par effet Joule dans les bobinages (perte cuivre) et dans l'entrefer (perte fer)
@@ -400,6 +410,7 @@ Dans la pratique, le rendement ne peut être égale à 1 à cause des pertes int
 * aux fuites de champ qui impliquent que même si le secondaire est à vide, le primaire peut débiter de l'énergie.
 
 Une étude plus complète conduirait à modéliser ces pertes par des dipôles "décorant" un modèle de transformateur parfait. Une telle modélisation (qui reste un modèle avec ses défauts) n'est pas à connaître par coeur en première année.
+````
 
 ## Champs constants et circuits mobiles
 
@@ -410,7 +421,7 @@ On considère le dispositif des rails de Laplace présenté au chapitre précéd
 
 ````
 
-````{tip} __Exercice : Etude des rails de Laplace__  
+````{tip} __Méthode : Etude des rails de Laplace__  
 
 On néglige tout phénomène d'auto-induction.
 
@@ -422,7 +433,7 @@ On néglige tout phénomène d'auto-induction.
 
 ````
 
-_Commentaires sur les hypothèse de modélisation_
+````{topic} Commentaires sur les hypothèse de modélisation
 
 * Le champ magnétique créé par l'aimant est uniforme et suivant l'axe normal au plan du circuit électrique ainsi réalisé. On a choisit de l'orientation comme suivant le schéma.
     * Caractère normal: peu importe car seule la composante normale joue dans le flux
@@ -433,18 +444,11 @@ _Commentaires sur les hypothèse de modélisation_
     * Calculons un ordre de grandeur: $i_{\max}=E/R$ et le champ magnétique propre est tel que $B_{\max} < \frac{\mu_0 I}{\textrm{distance au circuit}} $ (et ça c’est quand on est proche des fils, le champ magnétique pouvant décroître en $1/r^2$ voire $1/r^3$). Si B est produit par un aimant $B\approx 0,1 \rm{T}$. Il faudrait donc une intensité de l'ordre de $10^3 \rm{A}$  ou $10^4 \rm{A}$ pour que le champ magnétique propre ne soit pas négligeable. L'hypothèse est donc largement vraisemblable. _Attention: ce n'est plus vrai si le champ est créé par un autre circuit: il faut tenir compte de l'inductance propre._
 * La barre glisse sans frottements sur les rails
     * Très criticable en pratique. D'autant que l'accumulation des charges au contact tend à plaquer la tige mobile sur les rails.
+````
 
-
-### Induction et forces de Laplace
-On pourrait croire, à suivre le fil des chapitres que le phénomène d'induction et les force de Laplace sont deux choses différentes. Ce n'est que partiellement vrai. Si, dans le cas d'un circuit fixe, leur lien n'apparaît pas de prime abord. Les deux phénomènes sont possèdent un lien profond: le flux du champ magnétique. Observations:
-
-* Le phénomène d'induction est dû à la variation du flux du champ magnétique à travers le circuit.
-* Les forces de Laplace, dans le cas de régime stationnaire tendent à maximiser le flux du champ magnétique à travers le circuit.
-
-Il vient que le déplacement du circuit dû aux seules forces de Laplace impliquera une modification du flux du champ magnétique et donc un phénomène d'induction! A l'inverse, le phénomène d'induction dans un circuit, impliquant la modification de l'intensité dans le circuit (voire son apparition) modifiera (ou créera) la force de Laplace exercée par le champ magnétique sur le circuit. Attention néanmoins, ce raisonnement ne constitue ni une preuve des relations de puissance établies précédemment, ni une généralité. Ainsi, il peut très bien y avoir un phénomène d'induction dans un circuit fixe. Il ne peut donc y avoir transfert de puissance électrique-mécanique.
 
 ### Spire en rotation
-````{tip} __Exercice : Spire rectangulaire en rotation__  
+````{tip} __Méthode : Spire rectangulaire en rotation__  
 
 Considérons une spire rectangulaire de côté a et b en rotation autour d'un axe Oz. L'ensemble est soumis à un champ magnétique uniforme et constant dirigé dans la direction Ox.
 
@@ -568,8 +572,16 @@ Dans le cas général, le rotor est constitué d'un bobinage dont la géométrie
 On obtient alors les "équations d'une machine à courant continu": $e = K \omega$ et $\Gamma_L = Ki$ avec la force électromotrice orientée en convention récepteur.
 ````
 
-## Travaux dirigés
+## S'entrainer
 
+### Applications
+````{tip} __Exercice : Deux bobines réelles en inductance mutuelle.__  
+
+On considère deux bobines d'auto-inductance L, de résistance R et de coefficient d'inductance mutuelle M. La première est court-circuitées et la seconde reliée à un générateur délivrant une tension $E(t) = E_0 \cos \omega t$. Déterminer les équations couplées pour les amplitudes complexes des intensités dans chaque circuit.
+
+````
+
+### Entrainement
 ````{tip} __Exercice : Pince ampèremétrique__
 
 On considère un tore de section carré de c\^oté $a$ et de rayon moyen $R$ sur lequel on a enroulé $n$ spires jointives, les deux extrémités du fil étant court-circuités. On note Oz l'axe du tore et dans un repère cylindrique, chaque spire est contenue dans un plan. Le circuit est parcouru par un courant d'intensité $I$. 

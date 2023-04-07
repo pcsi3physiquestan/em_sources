@@ -3,6 +3,10 @@ root: em
 
 chapters:
   - file: notebook/champ_b
+    sections:
+    - file: notebook/champ_b_methodes
+    - file: notebook/champ_b_activite
+    - file: notebook/champ_b_td
   - file: notebook/particules_c
   - file: notebook/actions_b
   - file: notebook/induction

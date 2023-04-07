@@ -14,7 +14,7 @@ kernelspec:
   name: python3
 ---
 # Mouvement de particules chargées
-````{dropdown} Remarque
+````{topic} Remarque
 
 On a déjà vu en mécanique que des particules chargées pouvaient être soumises à une force particulière: l'interaction électrostatique. Cette interaction résulte simplement d'interactions entre charges qu'elles soient mobiles ou immobiles. En réalité, on observe que pour des particules chargées en mouvement, l'interaction devient plus complexe: on parle d'interaction électromagnétique. Du point de vue classique, cette interaction est regroupée dans ce qu'on appelle la force de Lorentz. Celle-ci permet de décrire de nombreux phénomènes électromagnétiques, notamment quand on s'intéresse à un grand nombre de particules chargées à une échelle pas trop petite. Il apparaît alors que la force de Lorentz dépend de la position relative des charges ainsi que de leur mouvement relatif. Nous allons faire apparaître naturellement deux champs vectoriels: l'un dit électrique en relation avec l'interaction électrique de Coulomb déjà connue et l'autre, en relation avec les interactions de charges en mouvement sera appelé champ magnétique. Le but du cours d'électromagnétisme de première année est de savoir comment calculer ces champs à  partir des données de leur cause: les distributions de positions et de vitesses (= courant électrique) des charges. On peut noter qu'à l'échelle atomique, l'utilisation des champs électromagnétiques demande le passage à la mécanique quantique et la théorie des champs qui n'est évidemment pas au programme de première année.
 
@@ -29,31 +29,30 @@ On a déjà vu en mécanique que des particules chargées pouvaient être soumis
 
 Soit deux particules chargées de charges $q_1$ et $q_2$ située aux points $M_1$ et $M_2$. La charge en $M_1$ exerce sur la charge en $M_2$ une force appelée force électrostatique de Coulomb dont l'expression est:
 
-\begin{equation}
+$$
 \overrightarrow{F_{M_1 \rightarrow M_2}} = \frac{q_1 q_2}{4 \pi \epsilon_0} \frac{\overrightarrow{M_1 M_2}}{M_1 M_2^3}
-\end{equation}
+$$
 
 où $\epsilon_0$ est une constante appelée permittivité du vide: $\epsilon_0 = 8.85 \times 10^{-12} \rm{m^{-3}.kg^{-1}.A^{2}.s^{4}}$
 
 ````
 
-L'étude des mouvements de M et M' dépend peu du type de problème qu'on considère. Soit on considère que l'une des deux charges est fixe, soit les deux charges sont mobiles et le principe d'étude des systèmes à deux points nous ramène finalement au cas précédent. Cela revient finalement à particulariser un des points (ex: M) et à considérer le mouvement de l'autre charge (ex: M'): on peut alors introduire une grandeur qui ne dépend que de M et plus de M'. On pourra alors faire une étude globale du comportement des charges (on peut faire le parallèle avec le champ de pesanteur). C'est là qu'intervient le champ électrostatique.
-
 ````{important} __Définition : Champ électrique pour une particule chargée__
 
 Soit une particule chargée située au point P de chargé $q$, on peut définir le champ électrostatique créé par P en un point M quelconque par:
 
-\begin{equation}
+$$
 \overrightarrow{E_{q}}(M) = \frac{q}{4 \pi \epsilon_0} \frac{\overrightarrow{PM}}{PM^3}
-\end{equation}
-
+$$
 ````
-Pour une particule chargé de charge q' mise en M, la force exercée par P sur la particule est alors $\overrightarrow{F} = q' \overrightarrow{E_q}(M)$. En faisant le parallèle entre le champ électrostatique et le champ de gravitation, on voit tout de suite l'intérêt de définir cette grandeur.
 
-#### Champ électrostatique créé par plusieurs charges: principe de superposition
+````{topic} Champ et force
+Pour une particule chargé de charge q' mise en M, la force exercée par P sur la particule est alors $\overrightarrow{F} = q' \overrightarrow{E_q}(M)$. En faisant le parallèle entre le champ électrostatique et le champ de gravitation, on voit tout de suite l'intérêt de définir cette grandeur.
+````
+
+````{topic} __Principe de superposition__
 Considérons maintenant une distribution de charge $\{q_i\}$ en des points $\{P_i\}$ distincts. Si une particule chargé $q'$ se trouve en un point M de l'espace. La résultante des forces électriques de tous les points  sur M est la somme de chaque interactions de Coulomb. Il vient:
 
-````{important} __Principe de superposition__
 
 Le champ électrique créé par une distribution de charge $\{q_i\}$ en un point M donné est la somme des champ créés par chaque charge seule.
 
@@ -61,14 +60,13 @@ Le champ électrique créé par une distribution de charge $\{q_i\}$ en un point
 
 ### Circulation de charge: champ magnétique.
 
-#### Force exercée sur une charge ponctuelle
 ````{important} __Définition : Champ magnétique (Rappel)__
 
 Soit une particule chargé de charge $q$ en un point M possédant une vitesse $\overrightarrow{v}$. L'action d'un champ magnétique $\overrightarrow{B}$ sur la charge $q$ s'écrit:
 
-\begin{equation}
+$$
 \overrightarrow{F} = q \overrightarrow{v} \wedge \overrightarrow{B}(M)
-\end{equation}
+$$
 
 ````
 
@@ -77,13 +75,13 @@ Soit une particule chargé de charge $q$ en un point M possédant une vitesse $\
 
 Si on considère une particule chargé mobile dans un champ électrique et magnétique, il vient alors que ces deux champs exercent une action conjugué électromagnétique appelée force de Lorentz et qui a pour expression:
 
-\begin{equation}
+$$
 \overrightarrow{F} = q (\overrightarrow{E} + \overrightarrow{v} \wedge \overrightarrow{B})
-\end{equation}
+$$
 
 ````
 
-````{dropdown} Remarque
+````{topic} Remarque
 
 A l'échelle macroscopique, cette force tend à décroître rapidement. Cette force devient importante quand:
 
@@ -125,15 +123,11 @@ La force magnétique ne travaille pas au contraire de la force électrostatique.
 Le champ électrique en régime statique est conservatif: $\overrightarrow{E} = - \overrightarrow{grad} V$ où $V$ est le potentiel électrostatique. La force électrique est donc aussi conservative: l'énergie potentielle électrique sera donc: $E_p = qV$.
 
 ````
-	
-
-La force magnétique ne travaillant pas, on peut dire qu'il s'agit de l'énergie potentielle associée à la force de Lorentz. Attention, néanmoins le caractère conservatif du champ électrique n'est valable que pour des champs statiques.
-
 
 ## Mouvement d'une particule chargée dans un champ électrostatique uniforme
 
 ### Applications
-````{tip} __Exercice : Accélération de particules__  
+````{tip} __Méthode : Accélération de particules__  
 
 On considère deux plaques infinies $P_1$ et $P_2$ distantes d'une distance $d$ et chargées uniformément et portées chacune aux potentiels respectifs $V_1$ et $V_2$. Des particules de charge $q$ sont libérées sans vitesse initiale de la plaque 1. On oriente un axe Ox perpendiculaire aux plaques avec la plaque $P_1$ est en $x=0$. On admet que le champ électrique est uniforme entre les deux plaques et suivant $\overrightarrow{e_x}$: $\overrightarrow{E} = E_0 \overrightarrow{e_x}$.
 
@@ -155,7 +149,7 @@ Cette unité est très utile à l'échelle microscopique.
 
 ````
 
-````{tip} __Exercice : Déviation d'un faisceau électronique__  
+````{tip} __Méthode : Déviation d'un faisceau électronique__  
 
 On considère maintenant une particule possédant une vitesse $v_0$ perpendiculaire à un champ $\overrightarrow{E}$ uniforme. On suppose que le champ n'est établi que sur distance $d$ et que les particules sont des électrons. A la sortie de la zone de déviation, il n'y a plus de champ électrique et on place un écran à une distance D de la zone sur lequel est repéré l'impact du faisceau électronique.
 
@@ -187,13 +181,6 @@ Le mouvement est donc un mouvement hélicoïdal.
 Si la vitesse initiale de la charge est perpendiculaire à $\overrightarrow{B}$ ($\phi = \pi/2$), alors la trajectoire est un cercle contenu dans le plan perpendiculaire au champ magnétique.
 ````
 
-````{dropdown} Remarque
-
-La preuve de cette propriété est donnée par la suite. Elle n'est normalement pas à connaître.
-
-````
-
-
 ````{important} Fondamental : Cas du mouvement circulaire plan
 
 Soit une particule de charge $q$ dans un champ magnétique uniforme $\overrightarrow{B}$. Si la vitesse initiale $v_0$ est perpendiculaire à $\overrightarrow{B}$, le mouvement est circulaire. Les caractéristiques du mouvement sont:
@@ -202,9 +189,9 @@ Soit une particule de charge $q$ dans un champ magnétique uniforme $\overrighta
 * la vitesse angulaire est la pulsation cyclotron $\omega_c = \vert \frac{qB}{m} \vert$
 * le rayon est $R = \vert \frac{mv_0}{qB} \vert$
 * le cercle est parcouru dans le sens en cohérence avec le vecteur $-q\overrightarrow{B}$ (règle du tire-bouchon)
-
-
 ````
+
+````{important} __Démonstration__
 
 >Cette preuve est à connaître. On part du postulat que le mouvement est contenu dans le plan perpendiculaire à $\overrightarrow{B}$.
 >
@@ -242,9 +229,13 @@ $$
 >soit la pulsation cyclotron en valeur absolue. On a bien $\dot \theta <0$ si $q > 0$ et $\dot \theta >0$ si $q < 0$ soit l'orientation de la trajectoire en cohérence avec $-q \overrightarrow{B}$.
 >
 >De $v_0 = R \dot \theta$, il vient immédiatement l'expression du rayon.
+````
 
 
-````{tip} __Exercice : Déflexion par un champ magnétique__  
+````{margin}
+Si le champ magnétique ne peut accélérer les particules (on a vu qu'il ne travaillait pas), il est fort utile pour dévier les faisceaux de particules. C'est par exemple un champ magnétique qui est utilisé dans les anciennes télévisions.
+````
+````{tip} __Méthode : Déflexion par un champ magnétique__  
 
 On suppose que le champ magnétique n'existe qu'entre y=0 et y=D. Pour un champ $B=0.1\rm{T}$ et un électron dont la vitesse initiale de $2\times10^{7} \rm{m.s^{-1}}$
 
@@ -253,27 +244,26 @@ On suppose que le champ magnétique n'existe qu'entre y=0 et y=D. Pour un champ 
 
 ````
 
-````{dropdown} Remarque
 
-Si le champ magnétique ne peut accélérer les particules (on a vu qu'il ne travaillait pas), il est fort utile pour dévier les faisceaux de particules. C'est par exemple un champ magnétique qui est utilisé dans les anciennes télévisions.
+### Exemple d'utilisation: cyclotron et spectrométrie de masse (en ligne)
 
-````
-
-### Exemple d'utilisation: cyclotron et spectrométrie de masse
-
-#### Le cyclotron
+````{topic} Le cyclotron
 La déviation ainsi obtenue est utilisée  dans le cyclotron. Il s'agit d'un accélérateur de particules chargées qui conjugue les effets des deux champs. Les particules évoluent dans deux demi-cylindre, appelés dees, de rayon R dans lesquels règnent un champ magnétique uniforme perpendiculaire à la face circulaire. Entre les deux dees se trouve  une petite épaisseur dans laquelle règne un champ électrique uniforme mais qui varier au cours du temps (de manière périodique). Après un premier temps de chauffe, les électrons, sortant d'un dee sont accélérés par le champ électrique en direction de l'autre dee. Les particules vont effectuer des demi-cercles dans chaque dee, revenant ainsi dans dans l'espace d'accélération. Entre-temps, le champ électrique a varié et s'est inversé de sorte que les particules vont être à nouveau accélérer. La distance entre les deux dees étant faible devant R, on peut supposer que le champ E est constant durant le passage des particules.
 
 On peut remarquer que le temps entre eux passages dans la zone d'accélération est constant, il vaut la demi-période de rotation calculée précédemment, le champ doit donc avoir une période T, soit une pulsation $\omega_c$. D'où le nom de pulsation cyclotron.
 
 Ainsi, pour une différence de potentiel de 10kV, l'énergie cinétique Ec (en supposant l'énergie nulle au départ) après n passages est: $Ec = nqU$. Il aurait donc fallu une différence de potentiel de $10 * nkV$ pour obtenir la même accélération. Si le champ électrique est le même dans les deux cas, cela signifie un espace n fois plus grand.
+````
 
-#### Spectromètre de masse
+````{topic} Spectromètre de masse
 On peut aussi remarquer que le rayon R dépend de $v_0$ mais aussi de la masse de la particule. C'est cette propriété qui est utilisée dans le spectromètre de masse: en introduisant des particules accélérées toutes à la même vitesse dans un champ magnétique uniforme, on peut séparer des particules chargées de masse différentes.
 
 En général, le spectromètre de masse est couplé avec un dispositif réalisant une chromatographie (liquide ou gazeuse). En couplant le temps de migration dans la colonne de chromatographie avec le point d'arrivée de l'élément dans le collecteur à la sortie du spectromètre, on obtient de nombreuses informations. En les comparant avec les tables, on peut en général déterminer la nature des composés étudiés.
+````
 
-### Cas d'un champ magnétique non uniforme.
+### Cas d'un champ magnétique non uniforme. (HP - en ligne)
+
+````{topic} B non uniforme
 On s'intéresse ici à des champs magnétiques dont les variations sont faibles.
 
 Commençons par remarquer que dans le cas d'un champ magnétique uniforme le mouvement hélicoïdal se fait sur la surface d'un tube de champ (les lignes de champ étant des droites).
@@ -281,9 +271,9 @@ Commençons par remarquer que dans le cas d'un champ magnétique uniforme le mou
 Pour un champ magnétique variant faiblement, on arrive à montrer que les particules vont à nouveaux tourner autour de la direction globale du champ en s'enroulant sur un tube de champ. Si le tube se rétrécit le rayon de l'hélice va se rétrécir et inversement.
 
 Observation: Lorsqu'elles arrivent sur Terre, les particules chargées issues des vents solaires subissent ainsi la déviation par le champ magnétique terrestre. Vers les pôles, elles vont suivre les lignes de champ qui bouclent aux pôles magnétiques. Ces le seul endroits où elles peuvent atteindre la haute atmosphère et leur interaction avec celle-ci créé un phénomène particulier: les aurores boréales.
+````
 
-
-## Travaux dirigés
+## Entrainement
 ````{tip} __Exercice : Spectrographe de masse__
 
 ```{figure} ./images/Mecanique_TD7_EX1_1.jpeg

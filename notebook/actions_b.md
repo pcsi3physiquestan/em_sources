@@ -15,8 +15,8 @@ kernelspec:
 ---
 # Actions d'un champ magnétique. Forces de Laplace 
 
-## Position du problème
-Observations:
+## Position du problème (en ligne)
+````{topic} Observations
 
 * Action d'un aimant sur un autre aimant: Il n'y a pas de mouvement --- en tout cas visibles à l'échelle macroscopique et pourtant, comme on l'a précisé, l'interaction est d'origine magnétique.
 * Action d'un aimant sur un circuit: Un circuit est localement neutre et c'est l'ensemble du circuit qui est déplacé par le champ magnétique, pas seulement les charges en mouvement.
@@ -28,13 +28,12 @@ L'action d'un champ magnétique se généralise à tout objet magnétique par l'
 * l'action d'un champ magnétique sur un dipôle magnétique.
 
 Fort heureusement, cette action, ayant pour origine la même interaction fondamentale, aura les mêmes caractéristiques dans les deux cas. On parlera de __force de Laplace__.
-
-```{dropdown} Remarque
+```{note} Remarque
 
 On définit normalement la force de Laplace comme l'action d'un champ magnétique sur un circuit parcouru par une intensité. On peut alors généraliser les caractéristiques de son action sur un dipôle magnétique au moyen d'une moyen du dipôle en terme de circuit électrique --- on a vu qu'une spire, dans l'approximation dipolaire était considérée comme un dipôle magnétostatique.
 
+```
 ````
-
 
 ## Force de Laplace
 
@@ -43,44 +42,45 @@ On définit normalement la force de Laplace comme l'action d'un champ magnétiqu
 ````{important} __Définition : Force de Laplace sur un élément infinitésimal__
 
 Soit un circuit $\Gamma$ parcouru par une intensité I plongé dans un champ magnétique $\overrightarrow{B}$. Le champ magnétique exerce une action sur le circuit global appelé force de Laplace. Chaque petit élément $\overrightarrow{dl}$ en un point M du circuit subit une force:
-\begin{equation}
+
+$$
 \overrightarrow{dF}(M) = I \overrightarrow{dl} \wedge \overrightarrow{B}(M)
-\end{equation}
+$$
 
 ````
 
-````{important} __Fondamental : Action résultante sur un circuit__
-
-```{dropdown} Remarque
+```{margin} Remarque
 
 On rappelle qu'on doit définir la force ET le moment résultant. Comme on a défini les forces appliquées sur chaque "point" du circuit, on peut calculer ces deux éléments.
 ```
+````{important} __Fondamental : Action résultante sur un circuit__
 
 La résultante de toute les actions sur chaque point du circuit sera:
-\begin{equation}
+
+$$
 \overrightarrow{F}(\Gamma)= \oint_{M \in \Gamma} I \overrightarrow{dl}(M) \wedge \overrightarrow{B}(M)
-\end{equation}
+$$
 Le moment résultant en un point A sera:
-\begin{equation}
+
+$$
 \overrightarrow{M}_{A}(\overrightarrow{F}(\Gamma))= \oint_{M \in \Gamma} \overrightarrow{AM} \wedge (I \overrightarrow{dl}(M) \wedge \overrightarrow{B}(M))
-\end{equation}
+$$
 
 ````
 
-````{tip} __Exercice : Les forces de Laplace travaillent__  
+````{topic} __Exercice : Les forces de Laplace travaillent__  
 
 1. Pourquoi est-ce surprenant que les forces de Laplace travaillent?
 1. Dans un morceau de conducteur parallélépipèdique parcouru par une intensité I (sur sa longueur), déterminer l'influence qualitative d'un champ magnétique B sur la trajectoire des charges.
 1. Information: si deux parois sont chargées par des charges opposées, il se crée un champ électrique entre les deux parois dirigés de la paroi négatives vers la paroi positive. Montrer qu'alors, le réseau "fixe" du circuit subit une force qui le déplace dans la direction attendue par les forces de Laplace.
 1. Expliquer pourquoi dans ces conditions, les forces de Laplace peuvent "indirectement" travailler.
-````
 
-```{dropdown} Remarque
+```{note} Remarque
 
 La déformation du nuage électronique de conduction implique un travail interne dû à l'interaction entre le réseau atomique cristallin et les électrons de conduction. Il existe des modèles permettant de traiter cette interaction comme le modèle de Drüde. On pourrait même montrer qu'en régime stationnaire (I=cste), cette force dérive d'un potentiel! L'énergie potentielle associée en régime stationnaire est proportionnelle à l'opposé du flux du champ magnétique à travers le circuit. Il vient qu'un circuit en régime stationnaire aura tendance à se déplacer et s'orienter de manière à maximiser le flux du champ magnétique à travers lui.
 
 ```
-
+````
 
 ### Champ magnétique uniforme. Action résultante sur un circuit indéformable
 
@@ -98,14 +98,15 @@ Dans tous les cas, on se place dans l'ARQS, c'est-à-dire que l'intensité est l
 Généralisation (Cas A): Dans tous les cas, la résultante des actions d'un champ magnétique uniforme est nulle. Elle ne provoque donc pas de translation globale (déplacement du centre d'inertie).
 
 ````
-> __Démonstration__ :  
->
+
+````{important} __Démonstration__
+
 >\begin{align*}
 \overrightarrow{F}(\Gamma)&= \oint_{M \in \Gamma} I \overrightarrow{dl}(M) \wedge \overrightarrow{B}(M)\\
 &= I\underbrace{(\oint_{M \in \Gamma} \overrightarrow{dl}(M))}_{0} \wedge \overrightarrow{B_0}\\
 &=0
 \end{align*}
-
+````
 
 #### Moment résultant des forces de Laplace en un point O fixe
 ````{important} __Fondamental : Moment de Laplace résultante. Champ uniforme__
@@ -114,11 +115,11 @@ Généralisation (Cas A --- Admis): Pour un circuit quelconque de moment magnét
 
 ````
 
+````{topic} Démonstration
 ```{figure} ./images/em_spire_moment.jpg
 :name: fig_spire_moment
 :align: center
 ```
-> __Démonstration :__  
 >
 >Nous ne prouvons cette expression que dans le cas C, c'est-à-dire pour une géométrie particulière. C'estle seul cas où la preuve est à connaître.
 >
@@ -157,13 +158,7 @@ Généralisation (Cas A --- Admis): Pour un circuit quelconque de moment magnét
  &= I a^2 \overrightarrow{e_z} \wedge \overrightarrow{B_0}\\
  &= \overrightarrow{M} \wedge \overrightarrow{B_0}
 \end{align*}
-
-#### Conséquence sur le mouvement
-
-* Le principe fondamental de la dynamique montre qu'il n'y a pas d'accélération du centre d'inertie: le mouvement global de translation n'est pas modifié.
-* On observe par contre que la spire aura tendance à tourner pour aligner son moment magnétique sur le champ magnétique. Il y deux positions d'équilibre: le moment magnétique peut être parallèle ou anti-parallèle au champ magnétique.
-* En écartant légèrement la spire de ses positions d'équilibre, on observe que le moment tend à ramener le moment magnéitque dans la position parallèle: cette position est stable alors que la position anti-parallèle est instable.
-
+````
 
 #### Puissance des forces de Laplace
 
@@ -173,18 +168,14 @@ Généralisation (Cas B --- Admis): Pour un circuit quelconque de moment magnét
 
 __Cette propriété n'est PAS vraie dans le cas A où l'intensité varie.__
 
-```{dropdown} Remarque
-
-On pourrait réécrire cette énergie potentielle comme: $E_P = - I \phi_B$ où $\phi_B$ est le flux du champ magnétique à travers le circuit. Cette expression n'est vraie que si l'intensité est constante, mais elle présente l'avantage d'être encore vraie si le circuit se déforme. __Elle est toutefois hors-programme.__
-
-```
-
 ````
 
-### Si le champ n'est pas uniforme (HP)
+### Si le champ n'est pas uniforme (HP - en ligne)
+````{topic} Cas non uniforme
 La résultante des forces n'est plus nulle. Dans le cas général, le moment des forces est différent et la force ne dérive pas d'un potentiel. Néanmoins, si le champ varie lentement devant la taille du circuit (cas semblable à l'approximation dipolaire), le moment et la puissance des forces reste globalement valables (circuit indéformable) et on peut même trouver une expression (HP) à la résultante des forces.
 
 * (Admis) Dans un champ magnétique non uniforme mais variant lentement, un circuit filiforme indéformable tend à se déplacer dans les zones de plus fort champ magnétique et à s'orienter suivant le champ magnétique.
+````
 
 ### Action sur un dipôle magnétique 
 Les affirmations précédentes lorsque le champ n'est pas uniforme font apparaître les cas "où le champ varie sur des distances grandes devant la taille du circuit". Cela correspond à considérer la taille du circuit comme très petite, soit se placer dans le cadre de l'approximation dipolaire. Ainsi, la majorité des résultats trouvés précédemment vont se généraliser à un dipôle magnétique quelconque dans le cadre de l'approximation dipolaire.
@@ -194,19 +185,18 @@ Les affirmations précédentes lorsque le champ n'est pas uniforme font apparaî
 
 * La résultante des forces de Laplace est nulle.
 * Le moment des forces de Laplace s'écrit:
-\begin{equation}
+
+$$
 \overrightarrow{\Gamma} = \overrightarrow{M} \wedge \overrightarrow{B}
-\end{equation}
+$$
 
 Si le dipôle est rigide (c'est-à-dire $\overrightarrow{M} = cste$), alors la force dérive d'un potentiel et $E_{PL} = - \overrightarrow{M} \cdot \overrightarrow{B}$ 
 
 ````
-````{dropdown} Remarque
- Cas d'un champ non uniforme (HP): Les caractéristiques sont identiques à celle trouvée pour le circuit électrique, dans le cadre de variations spatialement lentes du champ. Dans le champ magnétique uniforme, un dipôle magnétique tend à aligner son moment magnétique sur le champ magnétique. Cette propriété a été utilisée précédemment pour caractériser les lignes de champ magnétique (aiguille de boussole).
 
-````
+### Utilisation des forces de Laplace (en ligne)
 
-### Utilisation des forces de Laplace: Moteur synchrone
+````{topic} Moteur synchrone
 Une machine synchrone est un dispositif permettant de transformer:
 
 * soit un apport d'énergie électrique alternatif en une énergie cinétique --- un mouvement de rotation: on parle de moteur.
@@ -221,8 +211,9 @@ Une machine synchrone est composée de deux parties:
 En fonctionnement moteur, les bobinages du stator sont alimentés en régime triphasé, c'est-à-dire qu'il sont soumis à la même tension sinusoïdal de pulsation $\omega$ mais déphasées successivement de $2 \pi /3$. Les intensités circulant dans les bobinages (normalement identiques) permettent ainsi de superposer trois champs magnétiques dont la résultante est assimilable à un champ magnétique tournant à une vitesse angulaire correspondant à la pulsation du signal triphasé.
 
 Interprétation: On a vu qu'un dipôle magnétique tendait à s'aligner sur le champ magnétique. Comme celui-ci est tournant, le rotor va tourner à la même vitesse (vitesse de synchronisme) que le champ magnétique.
+````
 
-### Action d'un champ magnétique uniforme sur un circuit déformable
+### Méthode : Action d'un champ magnétique uniforme sur un circuit déformable
 
 ```{figure} ./images/em_rail_laplace.jpg
 :name: fig_rail_laplace
