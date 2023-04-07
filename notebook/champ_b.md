@@ -246,8 +246,8 @@ Ces propriétés ne s'appliquent quà des points SUR les plans de symétrie/d'an
 ````
 ```{important} __Conséquence sur l'orientation du champ magnétique__
 
-* __En tout point M d'un plan de symétrie d'un champ de vecteur'__, le champ magnétique est __contenu__ dans le plan.
-* __En tout point M d'un plan d'antisymétrie d'un champ de vecteur__, le champ magnétique est __perpendiculaire__ au plan.
+* __En tout point M d'un plan de symétrie d'un champ de vecteur__, le vecteur est __contenu__ dans le plan.
+* __En tout point M d'un plan d'antisymétrie d'un champ de vecteur__, le vecteur est __perpendiculaire__ au plan.
 ```
 
 
