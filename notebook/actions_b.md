@@ -266,9 +266,10 @@ On considère un circuit formé de 4 tiges rigides de masses m et de longueur a.
 
 Un supraconducteur est un conducteur dans lequel le champ magnétique est imposé nul. En présence d'un champ magnétique extérieur $\overrightarrow{B_0}$, des courants de surfaces $\overrightarrow{j_S}$ (une densité surfacique de courant) apparaissent sur le conducteur de manière à annuler le champ magnétique intérieur. Ces courants sont données par la relation "de passage" :
 
-\[
+$$
 \overrightarrow{B_{ext}} - \overrightarrow{B_{int}} = \mu_0 \overrightarrow{j_S} \wedge \overrightarrow{n_{int \rightarrow ext}}
-\]
+$$
+
 où: $\overrightarrow{B_{ext}}$ est le champ à l'extérieur du supraconducteur, $\overrightarrow{B_{int}}$ est le champ à l'intérieur du supraconducteur et $n_{int \rightarrow ext}$ est le vecteur normale au point de la surface où l'on évalue les courants orienté de l'intérieur vers l'extérieur. On considère un supraconducteur occupant toute la partie $x>0$ (infini suivant y et z). L'espace $x<0$ est plongé dans un champ magnétique uniforme: $\overrightarrow{B_0} = B_0 \overrightarrow{e_z}$.
 
 1. Justifier sans calculs que les courants surfaciques créés ne vont pas dépendre de y et z.
