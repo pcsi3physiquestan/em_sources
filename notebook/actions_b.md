@@ -249,6 +249,8 @@ L'unité Ampère est définie comme l'intensité circulant dans deux fils infini
 1. Retrouver la valeur de cette force au moyen des formules données du champ magnétique créé par un fil infini.
 1. Commenter le caractère attractif/répulsif de la force d'interaction suivant les sens de parcours des intensités.
 ````
+_Point utile pour cet exercice_
+* _$\Longrightarrow$ Force de Laplace._
 
 ````{tip} __Exercice : Equilibre d'un losange conducteur__
 
@@ -261,6 +263,9 @@ On considère un circuit formé de 4 tiges rigides de masses m et de longueur a.
 
 1. Etudier les positions d'équilibre du système et leur stabilité par une étude énergétique. On admettra que la force de Lapalce dérive d'une énergie potentielle dont l'expression est $Ep = - I \Phi$ où $\Phi$ est le flux du champ magnéique à travers le losange.
 ````
+_Point utile pour cet exercice_
+* _$\Longrightarrow$ Système conservatif._
+* _$\Longrightarrow$ Equilibre et stabilité._
 
 ````{tip} __Exercice : Pression magnétique sur un supraconducteur__
 
@@ -277,6 +282,8 @@ où: $\overrightarrow{B_{ext}}$ est le champ à l'extérieur du supraconducteur,
 1. On considère une portion de surface du supraconducteur infinitésimale dS d'extension dy et dz. Exprimer l'intensité qui circule dans ce petit élément de surface. 
 1. En déduire la force surfacique de Laplace exercée par le champ magnétique sur la surface du supraconductrice. Commetner le terme utilisé de pression magnétique.
 ````
+_Point utile pour cet exercice_
+* _$\Longrightarrow$ Action de Laplace._
 
 ````{tip} __Exercice : Interaction entre un aimant et une spire__
 
@@ -285,6 +292,9 @@ Un dipôle magnétique de moment $\overrightarrow{M_1} = M_1 \overrightarrow{u_z
 1. Déterminer la force de Laplace exercée par le dipôle sur la spire en utilisant la formule du champ magnétique créé par un dipôle magnétique donnée dans le cours.
 1. En utilisant le moment magnétique de la spire $S_2$, retrouver l'expression précédente.
 ````
+_Point utile pour cet exercice_
+* _$\Longrightarrow$ Action de Laplace._
+* _$\Longrightarrow$ Dipole magnétique._
 
 ````{tip} __Exercice : Pression magnétique sur un conducteur__
 
@@ -298,3 +308,7 @@ L'expression trouvée ici est générale à la pression exercée par un champ ma
 [resume]
 1. Au Laboratoire National des Champs Magnétiques Intenses (Toulouse), on réalise des bobines non destructives (c'est-à-dire qu'elles ne sont pas détruites après la génération du champ magnétique) pouvant aller jusqu'à 80T. Déterminer la pression magnétique subit par le bobinage. Commenter.
 ````
+_Point utile pour cet exercice_
+* _$\Longrightarrow$ Champ magnétique d'une bobine longue._
+* _$\Longrightarrow$ Action de Laplace._
+* _$\Longrightarrow$ Intensité et densité de courant._

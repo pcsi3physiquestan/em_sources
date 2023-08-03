@@ -602,17 +602,11 @@ On place sur l'axe Oz un fil infini parcouru par un courant $i$. La résistance 
 1. Si $i$ varie, exprimer la force électromotrice d'induction dans le tore en fonction de $i$ et $I$ et des autres paramètres du tore. En déduire l'équation différentielle qui relie $i(t)$ et $I(t)$.
 1. Déterminer $I(t)$ en régime sinusoïdal forcé et en déduire la valeur mesurée par le voltmètre. Préciser l'intérêt d'un tel dispositif et ses limites.
 ````
-
-````{tip} __Exercice : Modélisation d'un transformateur réel__
-
-On considère un transformateur constitué d'un noyau torique de matériau ferromagnétique (perméabilité relative $\mu_r$, rayon moyen $r_T$, périmètre moyen $I_T$, section circulaire d'aire $S_T$) sur lequel sont bobinés deux enroulements conducteurs: un primaire constitué de $n_1$ spires et un secondaire constitué de $n_2$ spires.
-
-1. Rappeler les caractéristiques d'un transformateur parfait ainsi que le schéma électrique de ce dernier.
-1. Etablir dans ces conditions le rapport de transformation en tension. Quelle hypothèse est utilisée pour l'établir?
-1. Rappeler le rapport $I_2/I_1$ dans un transformateur parfait.
-1. *Qu'observe-t-on au niveau des lignes de champ si $\mu_r$ est fini? Montrer que si $\mu_r$ est considéré comme fini, alors il existe un courant ``magnétisant''  dans le primaire, même lorsque le secondaire est à vide. On utilisera pour cela le théorème d'Ampère donné dans le cours. Relier $I_m$ à $U_1$ la tension du primaire. En déduire qu'on peut modéliser cette influence par une inductance $L_m$ en parallèle de l'entrée du primaire dont on déterminera la valeur.
-1. Comment modéliser les pertes cuivre et l'auto-induction dans les bobinages? Où placer les dip\^oles électriques qui modélisent ces effets?
-````
+_Point utile pour cet exercice_
+* _$\Longrightarrow$ Symétrie des champs._
+* _$\Longrightarrow$ Flux du champ magnétique._
+* _$\Longrightarrow$ Loi de Faraday._
+* _$\Longrightarrow$ Régime sinusoïdal forcé._
 
 
 ````{tip} __Exercice : Transimpédance__
@@ -620,6 +614,8 @@ On considère un transformateur constitué d'un noyau torique de matériau ferro
 
 1. On considère un transformateur parfait de rapport en tension m. Le primaire est relié à un générateur de Thévenin de f.e.m. $e_1(t)$ et de résistance de sortie $R_g$. La sortie est reliée à une impédance $\underline{Z}$. Montrer que circuit est équivalent à celui d'une impédance $\underline{Z_{eq}}$ branchée directement sur le générateur et dont on déterminera l'expression. On parle de transimpédance.
 ````
+_Point utile pour cet exercice_
+* _$\Longrightarrow$ Transformateur parfait._
 
 ````{tip} __Exercice : *Pertes énergétiques dans un conducteur__
 
@@ -636,6 +632,12 @@ On considère un conducteur cylindrique de hauteur h et de rayon R d'axe Oz plon
 1. Déterminer l'énergie perdue par effet Joule dans l'ensemble du conducteur. Commenter la dépendance en la fréquence. Cette dépendance est générale pour les courants de Foucault.
 1. Présenter deux cas: l'un où les pertes par effets Joule dues aux courants de Foucault sont utiles et l'autre où elles sont problématiques.
 ````
+_Point utile pour cet exercice_
+* _$\Longrightarrow$ Symétrie des champs._
+* _$\Longrightarrow$ Flux du champ magnétique._
+* _$\Longrightarrow$ Loi de Faraday._
+* _$\Longrightarrow$ Effet Joule._
+* _$\Longrightarrow$ Conducteur._
 
 ````{tip} __Exercice : Double rail de Laplace__
 
@@ -644,11 +646,16 @@ On considère deux rails fixes et parallèles (distances a les séparant) conduc
 1. Déterminer qualitativement le mouvement des deux tiges en fonction du temps. 
 1. Retrouver ces conclusions par une étude quantitative.
 ````
+_Point utile pour cet exercice_
+* _$\Longrightarrow$ Flux du champ magnétique._
+* _$\Longrightarrow$ Action de Laplace._
 
 ````{tip} __Exercice : Couplage de machines à courant continu__
 
 Deux machines à courant continu à aimants permanents identiques sont électriquement connectées avec un interrupteur K en série entre les deux. On néglige tout frottement et on suppose que les machines fonctionnent à vide (pas de couple résistant). On note J le moment d'inertie des deux machines et R la résistance électrique propre de moteur. A $t=0$, on ferme l'interrupteur K alors que la machine 1 tourne à une vitesse angulaire et que la machine 2 est immobile.
 
 1. Déterminer l'évolution des vitesses angulaires de chaque machine en négligeant tout phénomène d'auto-induction. Représenter leur évolution et commenter les valeurs finales obtenues. Effectuer un bilan énergétique
-1. Reprendre l'étude précédente en tenant compte des phénomènes d'auto-induction modélisés par une inductance L identique pour chaque moteur.
+1. Reprendre l'étude précédente en tenant compte des phénomènes d'auto-induction modélisés par une inductance L identique pour chaque moteur (cas pseudo-périodique).
 ````
+_Point utile pour cet exercice_
+* _$\Longrightarrow$ Machine à courant continu._

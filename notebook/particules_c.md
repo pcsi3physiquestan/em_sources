@@ -291,6 +291,9 @@ _Données : $e=1.6 \times 10^{-19} \rm{C}$; $U=4000\rm{V}$; $B=0.1\rm{T}$; unit�
 1. Préciser le sens de B pour que les ions puissent être recueillis dans la fente O du collecteur (C). Calculer littéralement le rayon R de la trajectoire des ions dans l’enceinte (D).
 1. L’élément zinc contient deux isotopes de nombres de masse $A_1=68$ et $A_2 = 70$. On souhaite recueillir en O l’isotope $A_1$. Calculer numériquement la distance $l=T_2 O$ et évaluer la largeur maximale de la fente du collecteur.
 ````
+_Point utile pour cet exercice_
+* _$\Longrightarrow$ Accélération par un champ électrique._
+* _$\Longrightarrow$ Trajectoire dans un champ magnétique._
 
 ````{tip} __Exercice : Focalisation par un champ électrique__
 
@@ -305,6 +308,8 @@ Des électrons, préalablement accélérés par une tension V=10kV, pénètrent 
 1. Quelles sont les valeurs optimales à donner à $\alpha$ et E pour réaliser la focalisation de ces électrons, sachant que le faisceau incident présente une faible dispersion angulaire $\Delta \alpha << \alpha$?
 
 ````
+_Point utile pour cet exercice_
+* _$\Longrightarrow$ Déviation par un champ électrique._
 
 ````{tip} __Exercice : Focalisation par un secteur magnétique__
 
@@ -314,12 +319,16 @@ Des électrons, préalablement accélérés par une tension V=10kV, pénètrent 
 
 ```
 
-On considère un secteur magnétique d’angle $90 ^{\circ}$ définissant la zone d’action d’un champ magnétique B. permanent et uniforme dans lequel pénètrent des ions positifs monochargés de masse m et accélérés sous une tension de valeur absolue V. On note e la charge élémentaire.
+(Plus délicat)On considère un secteur magnétique d’angle $90 ^{\circ}$ définissant la zone d’action d’un champ magnétique B. permanent et uniforme dans lequel pénètrent des ions positifs monochargés de masse m et accélérés sous une tension de valeur absolue V. On note e la charge élémentaire.
 
 1. Calculer le module de la vitesse $v_0$ des ions à l’entrée du secteur magnétique, en supposant qu’ils sont émis sans vitesse avant l’accélération sous la tension V et préciser le sens de variation du potentiel au cours de l’accélération.
 1. Le secteur magnétique est conçu pour une trajectoire circulaire moyenne de rayon R fixée par construction. On notera O le centre de la trajectoire et Oxy le plan du cercle, le secteur magnétique occupant le premier quadrant. Indiquer, en fonction de R, e, m et V, l’expression du champ magnétique correspondant à cette trajectoire.
 1. Les ions issus d’une fente A située à une distance d de la face d’entrée du secteur magnétique et forment un faisceau peu dispersé en angle autour de la direction Ax perpendiculaire à la face à la face d’entrée du dispositif. Montrer que, pour un rapport e/m donné qui impose le choix de B, les ions provenant de A dont la vitesse est perpendiculaire à B sont focalisés en un point A’ que l’on déterminera. Peut-on parler de stigmatisme?
 ````
+_Point utile pour cet exercice_
+* _$\Longrightarrow$ Accélération par un champ électrique._
+* _$\Longrightarrow$ Trajectoire dans un champ magnétique._
+* _$\Longrightarrow$ Développement limité._
 
 ````{tip} __Exercice : Conduction dans un métal en présence d’un champ magnétique__
 
@@ -337,3 +346,5 @@ où $\gamma$ est une constante que l’on déterminera.
 1. En déduire que l’on peut écrire $j_x$ et $j_y$ sous la forme suivante: $j_x = \gamma (\alpha E_x + \beta E_y)$ et $j_y = \gamma (-\beta E_x + \alpha E_y)$ où $\alpha$ et $\beta$ sont deux constantes à déterminer en fonction des données.
 1. Si la conduction ne peut avoir lieu que suivant Ox, montrer que la présence du champ B impose la présence d’un champ électrique (appelé champ de Hall) et déterminer sa direction. Calculer la constante de Hall: $\frac{E_y}{j_x B}$.
 ````
+_Point utile pour cet exercice_
+* _$\Longrightarrow$ Force de Lorentz._

@@ -24,6 +24,9 @@ Reprendre les distributions de courant données dans [le cours sur les symétrie
 
 On choisira le type de repère de manière réfléchi quand il n'est pas donné.
 ````
+_Point utile pour cet exercice_
+* _$\Longrightarrow$ Symétrie d'un champ magnétique._
+
 
 ````{tip} __Exercice : Lecture d'une carte de champ__
 
@@ -47,6 +50,11 @@ Carte de champ dans un plan perpendiculaire à l'axe des fils.
 1. Quelle est la valeur du champ $\overrightarrow{B}$ en A ? En déduire une estimation du rapport $I_3/I_2$.
 1. On sait que le champ en M vaut 0,01 T. Estimer la valeur du champ en P.
 ````
+_Point utile pour cet exercice_
+* _$\Longrightarrow$ Carte de champ magnétique._
+* _$\Longrightarrow$ Symétrie d'un champ magnétique._
+* _$\Longrightarrow$ Champ magnétique créé par un fil infini._
+
 
 ````{tip} _Exercice : Moments magnétiques intrinséque et moment d'inertie.__
 
@@ -57,11 +65,17 @@ Le moment d'inertie d'un boule de masse  uniformément répartie sur son axe est
 1. Déterminer son moment magnétique en supposant la charge uniformément répartie en surface. 
 1. Calculer l'énergie cinétique et la vitesse à la périphérie. Commenter. On donne $s = 1/2; R = 2.8 \times 10^{-15} \rm{m}; m_e = 9.1\times 10^{-31} \rm{kg}$.
 ````
+_Point utile pour cet exercice_
+* _$\Longrightarrow$ Dipôle magnétique._
+* _$\Longrightarrow$ Moment magnétique._
 
 ````{tip} __Exercice : Générer un champ tournant. Double bobinage__
 
 1. On considère deux bobines longues qui pourront être assimilées à des bobines infinies quant au  champ magnétique qu'elles créent. Ces deux bobines sont disjointes et leurs axes forment un angle de $90 ^{\circ}$ (on ne s'intéressera pas ici à la manière de réaliser en pratique une telle configuration). Les deux bobines sont parcourus par des courants sinusoïdaux de même amplitude $I_0$, de même pulsation $\omega$ mais déphasé de $\pi/2$. Montrer que le champ magnétique résultant est un champ tournant dont on déterminera les caractéristiques.
 ````
+_Point utile pour cet exercice_
+* _$\Longrightarrow$ Champ magnétique d'une bobine longue._
+
 
 ````{tip} __Exercice : (Recherche) Matériau ferromagnétique__
 
