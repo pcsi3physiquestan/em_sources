@@ -317,8 +317,8 @@ Le modèle de Drüde est un modèle proposé pour décrire la conduction dans le
 On considère donc un électron de conduction soumis à la force précédente et à l'action d'un champ électrique supposé uniforme $\overrightarrow{E}$.
 
 1. Etablir l'équation du mouvement de l'électron. En déduire qu'il va tendre vers une vitesse limite qu'on déterminera.
-2. On note $n$ la densité volumique d'électron dans le matériau, exprimer la densité volumique de courant $\overrightarrow{j}$ en fonction de $n, \tau, e$ et $\overrightarrow{E}$ en régime établi. On appelle cette relation __loi d'Ohm locale $\overrightarrow{j} = \gamme \overrightarrow{E}$. où $\gamma$ est appelée conductivité du matériau__
-3. On considère un fil de longueur $L$ et de section $S$ dans lequel règne le champ électrique précédent supposé uniforme. Exprimer la différence de potentiel entre les deux extrémités du fil et l'intensité qui circule dans le fil. En déduire la loi d'Ohm globale et l'expression de la résistance R du fil en fonction de $\gamme, L$ et $S$.
+2. On note $n$ la densité volumique d'électron dans le matériau, exprimer la densité volumique de courant $\overrightarrow{j}$ en fonction de $n, \tau, e$ et $\overrightarrow{E}$ en régime établi. On appelle cette relation __loi d'Ohm locale $\overrightarrow{j} = \gamma \overrightarrow{E}$. où $\gamma$ est appelée conductivité du matériau__
+3. On considère un fil de longueur $L$ et de section $S$ dans lequel règne le champ électrique précédent supposé uniforme. Exprimer la différence de potentiel entre les deux extrémités du fil et l'intensité qui circule dans le fil. En déduire la loi d'Ohm globale et l'expression de la résistance R du fil en fonction de $\gamma, L$ et $S$.
 4. La conductivité du cuivre est $\gamma = 59.6 \times 10^6 S.m^{-1}$. Estimer la résistance d'un mètre de fil simple utilisé en TP et commenter.
 5. Si l'on considère maintenant une charge de conduction $q$ de signe quelconque. Exprimer la nouvelle conductivité $\gamma$ et commenter son signe. Quel est l'intérêt en chimie de cette observation ?
 ````
