@@ -13,7 +13,7 @@ kernelspec:
   language: python
   name: python3
 ---
-# Origine et ordre de grandeur du moment magnétique
+# Activité : Origine et ordre de grandeur
 Le magnétisme possède deux origines:
 
 * Le mouvement "physique" des particules chargées.

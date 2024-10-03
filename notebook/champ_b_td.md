@@ -30,13 +30,7 @@ _Point utile pour cet exercice_
 
 ````{tip} __Exercice : Lecture d'une carte de champ__
 
-Trois fils infinis longs et parallèles entre eux sont parcourus par des courants $I_1,I_2$ et $I_3$. Les lignes de champ sont représentées sur la carte ci-dessous. On rappelle que le champ magnétique créé par un fil infini s'écrit:
-
-$$
-\overrightarrow{B(M)} = \frac{\mu_0 I}{2 \pi M_0 M} \overrightarrow{e_{\theta,M/fil}}
-$$
-
-où $M_0$ est le projeté de M sur le fil et $\overrightarrow{e_{\theta,M/fil}}$ est le vecteur orthoradiale associé au point M dans un système de coordonnées cylindriques d'axe le fil orienté.
+Trois fils infinis longs et parallèles entre eux sont parcourus par des courants $I_1$ (bas gauche), $I_2$ (bas droite) et $I_3$ (haut centre). Les lignes de champ sont représentées sur la carte ci-dessous.
 
 ```{figure} ./images/Electromagnetisme_TD1_EX1_1.jpeg
 :name: fig_td1_ex1_carte_champ
@@ -44,30 +38,15 @@ où $M_0$ est le projeté de M sur le fil et $\overrightarrow{e_{\theta,M/fil}}$
 Carte de champ dans un plan perpendiculaire à l'axe des fils.
 ```
 
-
+1. Expliquer pourquoi il était attendu que les lignes de champs soient contenues dans le plan perpendiculaire au fil.
 1. Déterminer le signe de $I_1,I_2$ et $I_3$.
 1. Que peut-on dire de $I_1$ et $I_2$?
-1. Quelle est la valeur du champ $\overrightarrow{B}$ en A ? En déduire une estimation du rapport $I_3/I_2$.
-1. On sait que le champ en M vaut 0,01 T. Estimer la valeur du champ en P.
+1. Quelle est la valeur du champ $\overrightarrow{B}$ en A ? 
+1. Préciser si le champ magnétique sera plus fort autour de P ou de M.
 ````
 _Point utile pour cet exercice_
 * _$\Longrightarrow$ Carte de champ magnétique._
 * _$\Longrightarrow$ Symétrie d'un champ magnétique._
-* _$\Longrightarrow$ Champ magnétique créé par un fil infini._
-
-
-````{tip} _Exercice : Moments magnétiques intrinséque et moment d'inertie.__
-
-On considère un électron qu'on représente sous la forme d'un corpuscule sphérique de charge totale e et de rayon R en rotation autour de son diamètre; son moment cinétique est $\sigma = s \hbar = s \frac{h}{2 \pi}$ où $h = 6.63 \times 10^{-34} \rm{J.s}$ est la constante de Planck.
-
-Le moment d'inertie d'un boule de masse  uniformément répartie sur son axe est $J = \frac{2}{5} m_E R^2$.
-
-1. Déterminer son moment magnétique en supposant la charge uniformément répartie en surface. 
-1. Calculer l'énergie cinétique et la vitesse à la périphérie. Commenter. On donne $s = 1/2; R = 2.8 \times 10^{-15} \rm{m}; m_e = 9.1\times 10^{-31} \rm{kg}$.
-````
-_Point utile pour cet exercice_
-* _$\Longrightarrow$ Dipôle magnétique._
-* _$\Longrightarrow$ Moment magnétique._
 
 ````{tip} __Exercice : Générer un champ tournant. Double bobinage__
 
@@ -75,6 +54,20 @@ _Point utile pour cet exercice_
 ````
 _Point utile pour cet exercice_
 * _$\Longrightarrow$ Champ magnétique d'une bobine longue._
+
+````{tip} _(*)Moments magnétiques intrinséque et moment d'inertie.__
+
+On considère un électron qu'on représente sous la forme d'un corpuscule sphérique de charge totale e et de rayon R en rotation autour de son diamètre; son moment cinétique est $\sigma = s \hbar = s \frac{h}{2 \pi}$ où $h = 6.63 \times 10^{-34} \rm{J.s}$ est la constante de Planck.
+
+Le moment d'inertie d'un boule de masse  uniformément répartie sur son axe est $J = \frac{2}{5} m_E R^2$.
+
+1. Déterminer son moment magnétique en supposant la charge uniformément répartie en surface. 
+2. Calculer l'énergie cinétique et la vitesse à la périphérie. Commenter. On donne $s = 1/2; R = 2.8 \times 10^{-15} \rm{m}; m_e = 9.1\times 10^{-31} \rm{kg}$.
+````
+_Point utile pour cet exercice_
+* _$\Longrightarrow$ Dipôle magnétique._
+* _$\Longrightarrow$ Moment magnétique._
+
 
 
 ````{tip} __Exercice : (Recherche) Matériau ferromagnétique__

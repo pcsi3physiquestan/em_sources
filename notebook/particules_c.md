@@ -311,7 +311,26 @@ Des électrons, préalablement accélérés par une tension V=10kV, pénètrent 
 _Point utile pour cet exercice_
 * _$\Longrightarrow$ Déviation par un champ électrique._
 
-````{tip} __Exercice : Focalisation par un secteur magnétique__
+````{tip} __Exercice : Conduction dans un métal en présence d’un champ magnétique__
+
+L’espace est repéré par les axes cartésiens Ox, Oy, Oz et les vecteurs $(\overrightarrow{u_x}, \overrightarrow{u_y}, \overrightarrow{u_z})$. On s’intéresse ici à la conduction dans un métal assurée par des électrons de charge q=-e, de masse m, de densité n. Le métal est placé dans un champ électrique $\overrightarrow{E} = E_x \overrightarrow{u_x}+E_y \overrightarrow{u_y}+E_z \overrightarrow{u_z}$ et un champ magnétique $\overrightarrow{B} = B \overrightarrow{u_z}$. Ces champs sont uniformes et permanents. L’interaction entre les électrons et les ions fixes du réseau est modélisé par une force de frottement: $\overrightarrow{f} = - \frac{m}{\tau} \overrightarrow{v}$, v étant la vitesse des électrons.
+
+1. Déterminer l’unité de $\tau$.
+2. Etablir l’équation différentielle du mouvement d’un électron. Que devient cette équation en régime permanent.
+3. On note $j=nqv$ le vecteur densité de courant. Montrer qu’en régime permanent, les composantes de ce vecteur vérifie le système d’équations:
+\begin{align*}
+j_x - q \tau \frac{B}{m} j_y = \gamma E_x\\
+q \tau \frac{B}{m} j_x + j_y  = \gamma E_y\\
+j_z = \gamma E_z
+\end{align*}
+où $\gamma$ est une constante que l’on déterminera.
+1. En déduire que l’on peut écrire $j_x$ et $j_y$ sous la forme suivante: $j_x = \gamma (\alpha E_x + \beta E_y)$ et $j_y = \gamma (-\beta E_x + \alpha E_y)$ où $\alpha$ et $\beta$ sont deux constantes à déterminer en fonction des données.
+2. Si la conduction ne peut avoir lieu que suivant Ox, montrer que la présence du champ B impose la présence d’un champ électrique (appelé champ de Hall) et déterminer sa direction. Calculer la constante de Hall: $\frac{E_y}{j_x B}$.
+````
+_Point utile pour cet exercice_
+* _$\Longrightarrow$ Force de Lorentz._
+
+````{tip} __(*)Focalisation par un secteur magnétique__
 
 ```{figure} ./images/Mecanique_TD7_EX3_1.jpeg
 :name: fig_focalisation_chp_magnetique
@@ -322,29 +341,11 @@ _Point utile pour cet exercice_
 (Plus délicat)On considère un secteur magnétique d’angle $90 ^{\circ}$ définissant la zone d’action d’un champ magnétique B. permanent et uniforme dans lequel pénètrent des ions positifs monochargés de masse m et accélérés sous une tension de valeur absolue V. On note e la charge élémentaire.
 
 1. Calculer le module de la vitesse $v_0$ des ions à l’entrée du secteur magnétique, en supposant qu’ils sont émis sans vitesse avant l’accélération sous la tension V et préciser le sens de variation du potentiel au cours de l’accélération.
-1. Le secteur magnétique est conçu pour une trajectoire circulaire moyenne de rayon R fixée par construction. On notera O le centre de la trajectoire et Oxy le plan du cercle, le secteur magnétique occupant le premier quadrant. Indiquer, en fonction de R, e, m et V, l’expression du champ magnétique correspondant à cette trajectoire.
-1. Les ions issus d’une fente A située à une distance d de la face d’entrée du secteur magnétique et forment un faisceau peu dispersé en angle autour de la direction Ax perpendiculaire à la face à la face d’entrée du dispositif. Montrer que, pour un rapport e/m donné qui impose le choix de B, les ions provenant de A dont la vitesse est perpendiculaire à B sont focalisés en un point A’ que l’on déterminera. Peut-on parler de stigmatisme?
+2. Le secteur magnétique est conçu pour une trajectoire circulaire moyenne de rayon R fixée par construction. On notera O le centre de la trajectoire et Oxy le plan du cercle, le secteur magnétique occupant le premier quadrant. Indiquer, en fonction de R, e, m et V, l’expression du champ magnétique correspondant à cette trajectoire.
+3. Les ions issus d’une fente A située à une distance d de la face d’entrée du secteur magnétique et forment un faisceau peu dispersé en angle autour de la direction Ax perpendiculaire à la face à la face d’entrée du dispositif. Montrer que, pour un rapport e/m donné qui impose le choix de B, les ions provenant de A dont la vitesse est perpendiculaire à B sont focalisés en un point A’ que l’on déterminera. Peut-on parler de stigmatisme?
 ````
 _Point utile pour cet exercice_
 * _$\Longrightarrow$ Accélération par un champ électrique._
 * _$\Longrightarrow$ Trajectoire dans un champ magnétique._
 * _$\Longrightarrow$ Développement limité._
 
-````{tip} __Exercice : Conduction dans un métal en présence d’un champ magnétique__
-
-L’espace est repéré par les axes cartésiens Ox, Oy, Oz et les vecteurs $(\overrightarrow{u_x}, \overrightarrow{u_y}, \overrightarrow{u_z})$. On s’intéresse ici à la conduction dans un métal assurée par des électrons de charge q=-e, de masse m, de densité n. Le métal est placé dans un champ électrique $\overrightarrow{E} = E_x \overrightarrow{u_x}+E_y \overrightarrow{u_y}+E_z \overrightarrow{u_z}$ et un champ magnétique $\overrightarrow{B} = B \overrightarrow{u_z}$. Ces champs sont uniformes et permanents. L’interaction entre les électrons et les ions fixes du réseau est modélisé par une force de frottement: $\overrightarrow{f} = - \frac{m}{\tau} \overrightarrow{v}$, v étant la vitesse des électrons.
-
-1. Déterminer l’unité de $\tau$.
-1. Etablir l’équation différentielle du mouvement d’un électron. Que devient cette équation en régime permanent.
-1. On note $j=nqv$ le vecteur densité de courant. Montrer qu’en régime permanent, les composantes de ce vecteur vérifie le système d’équations:
-\begin{align*}
-j_x - q \tau \frac{B}{m} j_y = \gamma E_x\\
-q \tau \frac{B}{m} j_x + j_y  = \gamma E_y\\
-j_z = \gamma E_z
-\end{align*}
-où $\gamma$ est une constante que l’on déterminera.
-1. En déduire que l’on peut écrire $j_x$ et $j_y$ sous la forme suivante: $j_x = \gamma (\alpha E_x + \beta E_y)$ et $j_y = \gamma (-\beta E_x + \alpha E_y)$ où $\alpha$ et $\beta$ sont deux constantes à déterminer en fonction des données.
-1. Si la conduction ne peut avoir lieu que suivant Ox, montrer que la présence du champ B impose la présence d’un champ électrique (appelé champ de Hall) et déterminer sa direction. Calculer la constante de Hall: $\frac{E_y}{j_x B}$.
-````
-_Point utile pour cet exercice_
-* _$\Longrightarrow$ Force de Lorentz._
