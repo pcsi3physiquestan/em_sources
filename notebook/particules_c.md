@@ -295,7 +295,7 @@ _Point utile pour cet exercice_
 * _$\Longrightarrow$ Accélération par un champ électrique._
 * _$\Longrightarrow$ Trajectoire dans un champ magnétique._
 
-````{tip} __Exercice : Focalisation par un champ électrique__
+````{tip} __Focalisation par un champ électrique__
 
 ```{figure} ./images/Mecanique_TD7_EX2_1.jpeg
 :name: fig_focalisation_chp_elec
@@ -310,8 +310,20 @@ Des électrons, préalablement accélérés par une tension V=10kV, pénètrent 
 ````
 _Point utile pour cet exercice_
 * _$\Longrightarrow$ Déviation par un champ électrique._
+  
+````{tip} __Modèle de Drüde__
+Le modèle de Drüde est un modèle proposé pour décrire la conduction dans les métaux (notamment les fils de cuivre dans les circuits). Soumis à un champ électrique extérieur, les électrons de conduction du métal ne vont pas être accélérés indéfiniment : leur vitesse tend vers une vitesse limite. Paul Drüde a proposé une explication en tenant compte de l'interaction des électrons avec le réseau cristallin. Ce dernier, chargé positivement (à cause de l'arrachement des électrons) exerce une action de freinage sous la forme: $\overrightarrow{F}_D = -\frac{m}{\tau} \overrightarrow{v}$ sur les électrons où $m$ et $v$ sont les masses et vitesses de l'électron et $\tau$ un temps caractéristique très court dépendant du matériau.
 
-````{tip} __Exercice : Conduction dans un métal en présence d’un champ magnétique__
+On considère donc un électron de conduction soumis à la force précédente et à l'action d'un champ électrique supposé uniforme $\overrightarrow{E}$.
+
+1. Etablir l'équation du mouvement de l'électron. En déduire qu'il va tendre vers une vitesse limite qu'on déterminera.
+2. On note $n$ la densité volumique d'électron dans le matériau, exprimer la densité volumique de courant $\overrightarrow{j}$ en fonction de $n, \tau, e$ et $\overrightarrow{E}$ en régime établi. On appelle cette relation __loi d'Ohm locale $\overrightarrow{j} = \gamme \overrightarrow{E}$. où $\gamma$ est appelée conductivité du matériau__
+3. On considère un fil de longueur $L$ et de section $S$ dans lequel règne le champ électrique précédent supposé uniforme. Exprimer la différence de potentiel entre les deux extrémités du fil et l'intensité qui circule dans le fil. En déduire la loi d'Ohm globale et l'expression de la résistance R du fil en fonction de $\gamme, L$ et $S$.
+4. La conductivité du cuivre est $\gamma = 59.6 \times 10^6 S.m^{-1}$. Estimer la résistance d'un mètre de fil simple utilisé en TP et commenter.
+5. Si l'on considère maintenant une charge de conduction $q$ de signe quelconque. Exprimer la nouvelle conductivité $\gamma$ et commenter son signe. Quel est l'intérêt en chimie de cette observation ?
+````
+
+````{tip} __Conduction dans un métal en présence d’un champ magnétique__
 
 L’espace est repéré par les axes cartésiens Ox, Oy, Oz et les vecteurs $(\overrightarrow{u_x}, \overrightarrow{u_y}, \overrightarrow{u_z})$. On s’intéresse ici à la conduction dans un métal assurée par des électrons de charge q=-e, de masse m, de densité n. Le métal est placé dans un champ électrique $\overrightarrow{E} = E_x \overrightarrow{u_x}+E_y \overrightarrow{u_y}+E_z \overrightarrow{u_z}$ et un champ magnétique $\overrightarrow{B} = B \overrightarrow{u_z}$. Ces champs sont uniformes et permanents. L’interaction entre les électrons et les ions fixes du réseau est modélisé par une force de frottement: $\overrightarrow{f} = - \frac{m}{\tau} \overrightarrow{v}$, v étant la vitesse des électrons.
 
@@ -329,6 +341,7 @@ où $\gamma$ est une constante que l’on déterminera.
 ````
 _Point utile pour cet exercice_
 * _$\Longrightarrow$ Force de Lorentz._
+
 
 ````{tip} __(*)Focalisation par un secteur magnétique__
 

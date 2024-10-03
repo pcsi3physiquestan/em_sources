@@ -187,117 +187,6 @@ Si l'on ne peut créer un champ magnétique uniforme dans tout l'espace, on peut
 * une bobine longue: on peut montrer que le champ magnétique est globalement uniforme à l'intérieur de la bobine tant qu'on reste loin des bords.
 ````
 
-## Symétrie des champs magnétiques
-
-### Les distributions de courant
-On a vu que les courants sont responsables du champ magnétiques. Il faut donc pouvoir décrire une __distribution de courant__ dans l'espace pour ensuite pouvoir déterminer le champ magnétique en tout point.
-
-On a 3 types de description des courants :
-* une description linéique : cela correspond à la vision des courant électrique déjà utilisé en électrocinétique. On considère que la conduction électrique a lieu sur des lignes et on décrit les courant par l'intensité électrique et le sens de l'intensité. __Cela revient à négliger la section des fils électriques.__
-* une description volumique : A l'image du fil électrique, les charges se déplacent en réalité dans des volumes et non des lignes. On peut alors découper ces volumes en des volumes $d \tau_M$ infinitésimaux autour de chaque point M. Dans ces volumes, on peut considérer que les charges mobiles ont une concentration uniforme $\rho(M)$ (principe du calcul différentiel) et vitesse $\overrightarrow{v}(M)$ identique. On décrit alors la distribution de courant par __la densité volmumique de charge__ : $\overrightarrow{j_v}(M) = \rho(M) \overrightarrow{v}(M)$.
-* une description surfacique : Il arrive qu'une des deux dimensions du fil soit négligeable devant l'autre (cas des nappes de courant), les charges se déplacent presque dans des surfaces et non des lignes. On peut alors découper ces surfaces en des surfaces $d \Sigma_M$ infinitésimales autour de chaque point M de la surfaces où il y a du courant. Dans ces surfaces, on peut considérer que les charges mobiles ont une concentration _surfacique_ uniforme $\sigma(M)$ (principe du calcul différentiel) et vitesse $\overrightarrow{v}(M)$ identique. On décrit alors la distribution de courant par __la densité surfacique de charge__ : $\overrightarrow{j_s}(M) = \sigma(M) \overrightarrow{v}(M)$.
-
-````{attention}
-$\overrightarrow{j_s}$ et $\overrightarrow{j_v}$ n'ont PAS la même unité.
-````
-
-#### Exemples de distribution (en ligne)
-(exemple_dist)=
-````{topic} Exemples de distribution
-
-__Distribution linéique__  
-* Un fil infini parcouru par une intensité I
-* Une spire circulaire de rayon $R$ parcouru par une intensité $I$.
-* Une bobine de longueur infini constitué de spire circulaire de rayon $R$ et d'épaisseur négligeable jointives parcouru un courant $I$. On donne en général le nombre de spire par unité de longueur $n$
-
-__Distribution volumique__  
-* Un cylindrique infini de rayon $R$ parcouru par une distribution volumique $\overrightarrow{j_v}(M) = j_0 \overrightarrow{e_z}$. C'est la modélisation du fil infini en tenant compte de l'épaisseur du fil (en supposant la distribution homogène).
-
-__Distribution surfacique__
-* Nappe de courant : Une bande infinie de large $L$, d'épaisseur négligeable. On note $Ox$ l'axe normal à la nappe et $Oy$ l'axe correspondant à l'axe (infini) de la bande. Si la conduction a lieu suivant $Oy$, on la décrira par une distribution surfacique $\overrightarrow{j_s}(M) = j_0 \overrightarrow{e_y}$ (cas d'une distribution homogène des courant sur la nappe).
-````
-
-
-### Notions de symétries et d'invariance
-
-#### Invariance
-````{margin}
-En pratique, les invariances que nous rencontreront  seront associée à une indépendance vis-à-vis d'une coordonnée.__
-````
-```{important} __Invariance__
-
-Soit une transformation de l'espace $\mathcal{T}$. On dit qu'elle laisse invariante un champ scalaire $C(M)$ si et seulement si pour tout point M' image des points M de l'espace, $C(M) =C(M')$.
-```
-
-_On distingue principalement les invariances par translation et par rotation_.
-
-#### Symétrie et anti-symétrie planaire d'un vecteur
-````{important} __Symétrie planaires__
-Soit un plan $\Pi$. On dit que le champ vectoriel $\overrightarrow{j}(M))$ présente une symétrie par rapport à $\Pi$ si et seulement si pour tout point M' image de M par rapport à $\Pi$, $\overrightarrow{j}(M')$ est symétrique de $\overrightarrow{j}(M)$ par rapport à $\Pi$
-````
-
-````{important} __Antisymétrie planaires__
-
-Soit un plan $\Pi$. On dit que le champ vectoriel $\overrightarrow{j}(M))$ présente une anti-symétrie par rapport à $\Pi$ si et seulement si pour tout point M' image de M par rapport à $\Pi$, $\overrightarrow{j}(M')$ est l'antisymétrique de $\overrightarrow{j}(M)$ par rapport à $\Pi$, c'est-à-dire que $\overrightarrow{j}(M')$ est _l'opposé_ du symétrique de $\overrightarrow{j}(M)$.
-````
-
-````{margin}
-Ces propriétés ne s'appliquent quà des points SUR les plans de symétrie/d'antisymétrie.
-````
-```{important} __Conséquence sur l'orientation du champ magnétique__
-
-* __En tout point M d'un plan de symétrie d'un champ de vecteur__, le vecteur est __contenu__ dans le plan.
-* __En tout point M d'un plan d'antisymétrie d'un champ de vecteur__, le vecteur est __perpendiculaire__ au plan.
-```
-
-
-#### Symétrie et anti-symétrie planaire d'un pseudo-vecteur
-````{margin}
-Un pseudo-vecteur est en général issu d'un produit vectoriel entre deux vecteurs.
-````
-Les pseudo-vecteur sont des éléments mathématiques possédant les mêmes caractéristiques que les vecteurs (direction, sens, norme ou possibilité de projection dans une base orthonormée) MAIS qui n'auront pas les mêmes propriétés de symétrie. C'est le cas du moment cinétique et surtout __du champ magnétique qui est un pseudo-vecteur.__
-
-````{important} __Symétries  et antisymétries planaires__
-Pour un pseudo-vecteur, les plans de symétries et d'anti-symétrie sont inversés.
-````
-````{margin}
-Ces propriétés ne s'appliquent quà des points SUR les plans de symétrie/d'antisymétrie.
-````
-```{important} __Conséquence sur l'orientation du champ magnétique__
-
-* __En tout point M d'un plan de symétrie du champ magnétique__, le champ magnétique est __perpendiculaire__ au plan.
-* __En tout point M d'un plan d'antisymétrie du champ magnétique__, le champ magnétique est __contenu__ dans le plan.
-```
-
-
-
-### Principe de Curie
-```{margin}
-Un plan de symétrie n'a pas les mêmes conséquences sur $\overrightarrow{j}(M)$ et sur $\overrightarrow{B}$.
-```
-````{important} __Principe de Curie__
-Lorsque certaines causes produisent certains effets, les éléments de symétrie des causes doivent se retrouver dans les effets produits.
-````
-
-## Ordres de grandeurs de champs créés
-
-### Champ magnétique par un aimant droit
-
-* Aimants néodyme: 0,3 à 1 T
-* IRM (électro-aimant): 6T
-* Champ magnétiue terrestre : $0.5 \times 10^{-5} \rm{T} = 0.5 \rm{gauss}$
-
-### Champ créé par un circuit électrique (en ligne)
-
-````{topic} Théorème d'Ampère (pas à connaître en première année)
-La circulation du champ magnétique sur un contour orienté (C) fermé est le produit de $\mu_0$ par la somme algébrique des intensités des courants enlacés par ce contour, les intensités dont l'orientation n'est pas en cohérence avec celle du contour (règle du tire- bouchon) étant changées de signe:
-
-$$
-\oint_{(C)} \overrightarrow{B}\cdot \overrightarrow{dl} = \mu_0 \sum\limits_{i} \alpha_i I_i
-$$
-où $\alpha_i = \pm 1$ suivant que l'intensité $I_i$ est orientée en cohérence avec le contour.
-````
-
 ## Principe du dipôle magnétique
 
 ````{topic} Principe
@@ -407,3 +296,118 @@ $$
 Exemple de carte de champ de multipôles
 ```
 ````
+
+## Ordres de grandeurs de champs créés
+
+### Champ magnétique par un aimant droit
+
+* Aimants néodyme: 0,3 à 1 T
+* IRM (électro-aimant): 6T
+* Champ magnétiue terrestre : $0.5 \times 10^{-5} \rm{T} = 0.5 \rm{gauss}$
+
+### Champ créé par un circuit électrique (en ligne)
+
+````{topic} Théorème d'Ampère (pas à connaître en première année)
+La circulation du champ magnétique sur un contour orienté (C) fermé est le produit de $\mu_0$ par la somme algébrique des intensités des courants enlacés par ce contour, les intensités dont l'orientation n'est pas en cohérence avec celle du contour (règle du tire- bouchon) étant changées de signe:
+
+$$
+\oint_{(C)} \overrightarrow{B}\cdot \overrightarrow{dl} = \mu_0 \sum\limits_{i} \alpha_i I_i
+$$
+où $\alpha_i = \pm 1$ suivant que l'intensité $I_i$ est orientée en cohérence avec le contour.
+````
+
+
+
+
+## Symétrie des champs magnétiques
+
+### Les distributions de courant
+On a vu que les courants sont responsables du champ magnétiques. Il faut donc pouvoir décrire une __distribution de courant__ dans l'espace pour ensuite pouvoir déterminer le champ magnétique en tout point.
+
+On a 3 types de description des courants :
+* une description linéique : cela correspond à la vision des courant électrique déjà utilisé en électrocinétique. On considère que la conduction électrique a lieu sur des lignes et on décrit les courant par l'intensité électrique et le sens de l'intensité. __Cela revient à négliger la section des fils électriques.__
+* une description volumique : A l'image du fil électrique, les charges se déplacent en réalité dans des volumes et non des lignes. On peut alors découper ces volumes en des volumes $d \tau_M$ infinitésimaux autour de chaque point M. Dans ces volumes, on peut considérer que les charges mobiles ont une concentration uniforme $\rho(M)$ (principe du calcul différentiel) et vitesse $\overrightarrow{v}(M)$ identique. On décrit alors la distribution de courant par __la densité volmumique de charge__ : $\overrightarrow{j_v}(M) = \rho(M) \overrightarrow{v}(M)$.
+* une description surfacique : Il arrive qu'une des deux dimensions du fil soit négligeable devant l'autre (cas des nappes de courant), les charges se déplacent presque dans des surfaces et non des lignes. On peut alors découper ces surfaces en des surfaces $d \Sigma_M$ infinitésimales autour de chaque point M de la surfaces où il y a du courant. Dans ces surfaces, on peut considérer que les charges mobiles ont une concentration _surfacique_ uniforme $\sigma(M)$ (principe du calcul différentiel) et vitesse $\overrightarrow{v}(M)$ identique. On décrit alors la distribution de courant par __la densité surfacique de charge__ : $\overrightarrow{j_s}(M) = \sigma(M) \overrightarrow{v}(M)$.
+
+````{attention}
+$\overrightarrow{j_s}$ et $\overrightarrow{j_v}$ n'ont PAS la même unité.
+````
+
+#### Exemples de distribution (en ligne)
+(exemple_dist)=
+````{topic} Exemples de distribution
+
+__Distribution linéique__  
+* Un fil infini parcouru par une intensité I
+* Une spire circulaire de rayon $R$ parcouru par une intensité $I$.
+* Une bobine de longueur infini constitué de spire circulaire de rayon $R$ et d'épaisseur négligeable jointives parcouru un courant $I$. On donne en général le nombre de spire par unité de longueur $n$
+
+__Distribution volumique__  
+* Un cylindrique infini de rayon $R$ parcouru par une distribution volumique $\overrightarrow{j_v}(M) = j_0 \overrightarrow{e_z}$. C'est la modélisation du fil infini en tenant compte de l'épaisseur du fil (en supposant la distribution homogène).
+
+__Distribution surfacique__
+* Nappe de courant : Une bande infinie de large $L$, d'épaisseur négligeable. On note $Ox$ l'axe normal à la nappe et $Oy$ l'axe correspondant à l'axe (infini) de la bande. Si la conduction a lieu suivant $Oy$, on la décrira par une distribution surfacique $\overrightarrow{j_s}(M) = j_0 \overrightarrow{e_y}$ (cas d'une distribution homogène des courant sur la nappe).
+````
+
+
+### Notions de symétries et d'invariance
+
+#### Invariance
+````{margin}
+En pratique, les invariances que nous rencontreront  seront associée à une indépendance vis-à-vis d'une coordonnée.__
+````
+```{important} __Invariance__
+
+Soit une transformation de l'espace $\mathcal{T}$. On dit qu'elle laisse invariante un champ scalaire $C(M)$ si et seulement si pour tout point M' image des points M de l'espace, $C(M) =C(M')$.
+```
+
+_On distingue principalement les invariances par translation et par rotation_.
+
+#### Symétrie et anti-symétrie planaire d'un vecteur
+````{important} __Symétrie planaires__
+Soit un plan $\Pi$. On dit que le champ vectoriel $\overrightarrow{j}(M))$ présente une symétrie par rapport à $\Pi$ si et seulement si pour tout point M' image de M par rapport à $\Pi$, $\overrightarrow{j}(M')$ est symétrique de $\overrightarrow{j}(M)$ par rapport à $\Pi$
+````
+
+````{important} __Antisymétrie planaires__
+
+Soit un plan $\Pi$. On dit que le champ vectoriel $\overrightarrow{j}(M))$ présente une anti-symétrie par rapport à $\Pi$ si et seulement si pour tout point M' image de M par rapport à $\Pi$, $\overrightarrow{j}(M')$ est l'antisymétrique de $\overrightarrow{j}(M)$ par rapport à $\Pi$, c'est-à-dire que $\overrightarrow{j}(M')$ est _l'opposé_ du symétrique de $\overrightarrow{j}(M)$.
+````
+
+````{margin}
+Ces propriétés ne s'appliquent quà des points SUR les plans de symétrie/d'antisymétrie.
+````
+```{important} __Conséquence sur l'orientation du champ magnétique__
+
+* __En tout point M d'un plan de symétrie d'un champ de vecteur__, le vecteur est __contenu__ dans le plan.
+* __En tout point M d'un plan d'antisymétrie d'un champ de vecteur__, le vecteur est __perpendiculaire__ au plan.
+```
+
+
+#### Symétrie et anti-symétrie planaire d'un pseudo-vecteur
+````{margin}
+Un pseudo-vecteur est en général issu d'un produit vectoriel entre deux vecteurs.
+````
+Les pseudo-vecteur sont des éléments mathématiques possédant les mêmes caractéristiques que les vecteurs (direction, sens, norme ou possibilité de projection dans une base orthonormée) MAIS qui n'auront pas les mêmes propriétés de symétrie. C'est le cas du moment cinétique et surtout __du champ magnétique qui est un pseudo-vecteur.__
+
+````{important} __Symétries  et antisymétries planaires__
+Pour un pseudo-vecteur, les plans de symétries et d'anti-symétrie sont inversés.
+````
+````{margin}
+Ces propriétés ne s'appliquent quà des points SUR les plans de symétrie/d'antisymétrie.
+````
+```{important} __Conséquence sur l'orientation du champ magnétique__
+
+* __En tout point M d'un plan de symétrie du champ magnétique__, le champ magnétique est __perpendiculaire__ au plan.
+* __En tout point M d'un plan d'antisymétrie du champ magnétique__, le champ magnétique est __contenu__ dans le plan.
+```
+
+
+
+### Principe de Curie
+```{margin}
+Un plan de symétrie n'a pas les mêmes conséquences sur $\overrightarrow{j}(M)$ et sur $\overrightarrow{B}$.
+```
+````{important} __Principe de Curie__
+Lorsque certaines causes produisent certains effets, les éléments de symétrie des causes doivent se retrouver dans les effets produits.
+````
+
